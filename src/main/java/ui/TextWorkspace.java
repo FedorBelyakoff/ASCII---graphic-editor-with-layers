@@ -24,9 +24,15 @@ public class TextWorkspace implements Workspace {
 
     public TextWorkspace(JTextArea area) {
         this.area = area;
-        area.setLineWrap(true);
+        setAreaSettings(area);
         setFontSize(18);
         fillEmpty('x');
+    }
+
+    private void setAreaSettings(JTextArea area) {
+        area.setLineWrap(true);
+        area.setEditable(false);
+        area.setBackground(Color.WHITE);
     }
 
     @Override
@@ -102,7 +108,7 @@ public class TextWorkspace implements Workspace {
         area.setMinimumSize(area.getPreferredSize());
     }
 
-    private void fillEmpty(char ch) {
+    public void fillEmpty(char ch) {
         int areaCapacity = area.getRows() * area.getColumns();
         char[] chars = new char[areaCapacity];
         Arrays.fill(chars, ch);

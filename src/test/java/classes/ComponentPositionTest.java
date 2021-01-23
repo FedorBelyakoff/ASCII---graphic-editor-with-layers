@@ -1,6 +1,10 @@
 package classes;
 
+import com.formdev.flatlaf.IntelliJTheme;
+import controllers.ScrollPaneTest;
+import interfaces.Workspace;
 import ui.Selection;
+import ui.TextWorkspace;
 import ui.UiConstants;
 
 import javax.swing.*;
@@ -12,12 +16,26 @@ public class ComponentPositionTest extends JFrame {
     public static final Dimension SELECTION_STROKE_DIMENSION = new Dimension(10, 3);
     public static final int SELECTION_STROKE_INSET = 10;
     public static final Rectangle SELECTION_BOUNDS = new Rectangle(100, 100, 100, 100);
+    private JTextArea area;
 
     public ComponentPositionTest() throws HeadlessException {
         setWindowSettings();
 
-        JPanel container = createContainerPanel();
-        createSelection(container);
+        createWorkspace();
+    }
+
+    private Workspace createWorkspace() {
+        area = new JTextArea();
+        area.setLocation(100, 100);
+
+        TextWorkspace workspace = new TextWorkspace(area);
+        workspace.setDimensions(50, 20);
+        workspace.fillEmpty('x');
+
+        area.setSize(area.getPreferredSize());
+        add(area);
+
+        return workspace;
     }
 
     private void createSelection(JPanel container) {
@@ -47,6 +65,7 @@ public class ComponentPositionTest extends JFrame {
     }
 
     public static void main(String[] args) {
+        IntelliJTheme.install(ComponentPositionTest.class.getResourceAsStream("/arc-theme-orange.theme.json"));
         SwingUtilities.invokeLater(ComponentPositionTest::new);
     }
 }
