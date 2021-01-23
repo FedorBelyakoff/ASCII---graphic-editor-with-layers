@@ -1,0 +1,927 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+<Product Codepage="1252" Id="*" Language="1033" Manufacturer="ACME" Name="FlatLaF-ASCII-editor" UpgradeCode="13892ae7-69d7-435b-8989-44b37e96afad" Version="1.0.0.0">
+<Package Compressed="yes" InstallScope="perMachine" InstallerVersion="200" Languages="1033" Platform="x64" SummaryCodepage="1252"/>
+<Media Cabinet="Application.cab" EmbedCab="yes" Id="1"/>
+<Directory Id="TARGETDIR" Name="SourceDir">
+<Directory Id="ProgramFiles64Folder">
+<Directory Id="INSTALLDIR" Name="FlatLaF-ASCII-editor">
+<Component Guid="b35ff0ea-cd3e-4f0b-99e6-9908fff99035" Id="_b35ff0ea_cd3e_4f0b_99e6_9908fff99035" Win64="yes">
+<File DiskId="1" Id="exeFile" KeyPath="yes" Name="FlatLaF-ASCII-editor.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\FlatLaF-ASCII-editor.exe"/>
+</Component>
+<Component Guid="672527bd-84a1-4942-bd1d-d5e3519bd0ba" Id="_672527bd_84a1_4942_bd1d_d5e3519bd0ba" Win64="yes">
+<File DiskId="1" Id="_8d36e525_a83b_43c3_bb4d_25f1048b826d" KeyPath="yes" Name="FlatLaF-ASCII-editor.ico" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\FlatLaF-ASCII-editor.ico"/>
+</Component>
+<Directory Id="_c4c78981_c09f_475c_bba8_7558cca1a647" Name="jre">
+<Component Guid="ece6bd2f-95ea-4663-be5b-0df46795b4ae" Id="_ece6bd2f_95ea_4663_be5b_0df46795b4ae" Win64="yes">
+<File DiskId="1" Id="_aa2ed53b_15bd_4f8b_a654_dcf4a32eda46" KeyPath="yes" Name="ADDITIONAL_LICENSE_INFO" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\ADDITIONAL_LICENSE_INFO"/>
+</Component>
+<Component Guid="9ca7ba04-37d1-4208-a9c4-de18dad12f26" Id="_9ca7ba04_37d1_4208_a9c4_de18dad12f26" Win64="yes">
+<File DiskId="1" Id="_9da8fff6_472f_4793_9d91_41b38dd3652c" KeyPath="yes" Name="ASSEMBLY_EXCEPTION" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\ASSEMBLY_EXCEPTION"/>
+</Component>
+<Directory Id="_6902c9f1_4f6c_4c42_bd2c_8d0a4d5ab756" Name="bin">
+<Component Guid="378be65f-36eb-406c-ae68-30b612ac3eef" Id="_378be65f_36eb_406c_ae68_30b612ac3eef" Win64="yes">
+<File DiskId="1" Id="_3cce1660_f104_4e03_aa4e_08caaaa96058" KeyPath="yes" Name="attach.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\attach.diz"/>
+</Component>
+<Component Guid="52e00aa8-289e-4b24-9c62-97c19ae39784" Id="_52e00aa8_289e_4b24_9c62_97c19ae39784" Win64="yes">
+<File DiskId="1" Id="_2fcd3ed5_5892_403f_9f80_dde66cd7b3ed" KeyPath="yes" Name="attach.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\attach.dll"/>
+</Component>
+<Component Guid="9aa8ea0b-5e9a-4ff2-99aa-7f2fae5d1418" Id="_9aa8ea0b_5e9a_4ff2_99aa_7f2fae5d1418" Win64="yes">
+<File DiskId="1" Id="_d4e57d4b_5fb1_416c_8be9_b9ae4bfc4fe5" KeyPath="yes" Name="awt.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\awt.diz"/>
+</Component>
+<Component Guid="240e6af1-959d-4048-bd34-f1f0a13db60f" Id="_240e6af1_959d_4048_bd34_f1f0a13db60f" Win64="yes">
+<File DiskId="1" Id="_441ec70c_9ef9_43f7_9cf5_4b546ac3ba45" KeyPath="yes" Name="awt.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\awt.dll"/>
+</Component>
+<Directory Id="_876dd8e1_c971_4388_b207_67a0322a8329" Name="client">
+<Component Guid="0b118641-8456-48d3-8e3f-8165ee86bd99" Id="_0b118641_8456_48d3_8e3f_8165ee86bd99" Win64="yes">
+<File DiskId="1" Id="_7607b5bc_7ff5_4bc7_83be_b1d4d3c3178b" KeyPath="yes" Name="jvm.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\client\jvm.diz"/>
+</Component>
+<Component Guid="ce43a664-fa5a-41b2-9680-ee6338d05df3" Id="_ce43a664_fa5a_41b2_9680_ee6338d05df3" Win64="yes">
+<File DiskId="1" Id="_8150f4f3_7940_4a2c_a28e_475c07808a6e" KeyPath="yes" Name="jvm.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\client\jvm.dll"/>
+</Component>
+<Component Guid="2880a19a-ffcb-4eba-a366-4acea36cae19" Id="_2880a19a_ffcb_4eba_a366_4acea36cae19" Win64="yes">
+<File DiskId="1" Id="_a55e74ac_ea75_49c4_b723_a4a13a561d78" KeyPath="yes" Name="Xusage.txt" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\client\Xusage.txt"/>
+</Component>
+</Directory>
+<Component Guid="fe9bddeb-b0c8-4025-ba97-29d47ae33410" Id="_fe9bddeb_b0c8_4025_ba97_29d47ae33410" Win64="yes">
+<File DiskId="1" Id="_d2deb3e5_bcad_4db8_9478_33964cbb1654" KeyPath="yes" Name="dt_shmem.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\dt_shmem.diz"/>
+</Component>
+<Component Guid="18a65818-df10-4d4f-9c7b-db2868fb0fb4" Id="_18a65818_df10_4d4f_9c7b_db2868fb0fb4" Win64="yes">
+<File DiskId="1" Id="_c851ad14_a9e4_4064_aedc_e835d3a22e09" KeyPath="yes" Name="dt_shmem.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\dt_shmem.dll"/>
+</Component>
+<Component Guid="eb7bd789-419d-4822-8e96-1d1763df660d" Id="_eb7bd789_419d_4822_8e96_1d1763df660d" Win64="yes">
+<File DiskId="1" Id="_5f4a9e95_4394_499c_94a3_10f08d533d8c" KeyPath="yes" Name="dt_socket.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\dt_socket.diz"/>
+</Component>
+<Component Guid="94b4d395-96e7-4a63-9f41-8394fc261e3f" Id="_94b4d395_96e7_4a63_9f41_8394fc261e3f" Win64="yes">
+<File DiskId="1" Id="_2042fbe0_bf45_4e7f_88a7_28a6b66e9b83" KeyPath="yes" Name="dt_socket.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\dt_socket.dll"/>
+</Component>
+<Component Guid="c21cbff6-4d72-49b8-b5ce-9e579f65e2dc" Id="_c21cbff6_4d72_49b8_b5ce_9e579f65e2dc" Win64="yes">
+<File DiskId="1" Id="_b2309f8b_3089_47d1_9bc1_84044fa5585f" KeyPath="yes" Name="fontmanager.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\fontmanager.diz"/>
+</Component>
+<Component Guid="f6c751ba-b05b-49b5-8d31-672299c4bf32" Id="_f6c751ba_b05b_49b5_8d31_672299c4bf32" Win64="yes">
+<File DiskId="1" Id="_f9451bfc_0859_4e48_8002_933624e126d0" KeyPath="yes" Name="fontmanager.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\fontmanager.dll"/>
+</Component>
+<Component Guid="b939452c-60e0-4796-8b75-7dd747669f8d" Id="_b939452c_60e0_4796_8b75_7dd747669f8d" Win64="yes">
+<File DiskId="1" Id="_5ce15020_da66_4524_bd95_38647c7b5288" KeyPath="yes" Name="freetype.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\freetype.dll"/>
+</Component>
+<Component Guid="e8715483-592d-4775-a1b4-8728c6401297" Id="_e8715483_592d_4775_a1b4_8728c6401297" Win64="yes">
+<File DiskId="1" Id="_74d33bcc_d2a5_48f7_882c_6eee2daf1508" KeyPath="yes" Name="hprof.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\hprof.diz"/>
+</Component>
+<Component Guid="0897183d-2e4a-4785-8cb4-0d5f7efc247b" Id="_0897183d_2e4a_4785_8cb4_0d5f7efc247b" Win64="yes">
+<File DiskId="1" Id="_6393495e_de75_458e_9b46_d6470188f0c2" KeyPath="yes" Name="hprof.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\hprof.dll"/>
+</Component>
+<Component Guid="8558398a-7571-4a39-b7b5-c1eb58f1fe59" Id="_8558398a_7571_4a39_b7b5_c1eb58f1fe59" Win64="yes">
+<File DiskId="1" Id="_79f74a8a_f4a8_4c27_8b6b_10915d8da52d" KeyPath="yes" Name="instrument.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\instrument.diz"/>
+</Component>
+<Component Guid="80ee9faf-b7eb-48e1-9235-301c58ed6d5f" Id="_80ee9faf_b7eb_48e1_9235_301c58ed6d5f" Win64="yes">
+<File DiskId="1" Id="_e4736a70_3fa0_4900_b132_b7ad76187cb2" KeyPath="yes" Name="instrument.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\instrument.dll"/>
+</Component>
+<Component Guid="a862bc09-7084-46e1-bef5-b09c24ae7b98" Id="_a862bc09_7084_46e1_bef5_b09c24ae7b98" Win64="yes">
+<File DiskId="1" Id="_b3a8a478_1779_4185_a983_75a718c31232" KeyPath="yes" Name="j2pcsc.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\j2pcsc.diz"/>
+</Component>
+<Component Guid="c41ae083-c34a-4f48-a9e2-0ce93aa88699" Id="_c41ae083_c34a_4f48_a9e2_0ce93aa88699" Win64="yes">
+<File DiskId="1" Id="_6a0c070a_d9db_4b04_9e50_7c735219a485" KeyPath="yes" Name="j2pcsc.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\j2pcsc.dll"/>
+</Component>
+<Component Guid="bcfc41e5-c186-495d-a28b-d7f695ce2373" Id="_bcfc41e5_c186_495d_a28b_d7f695ce2373" Win64="yes">
+<File DiskId="1" Id="_19ec8ef2_037b_4136_a3fa_e219371c2ec6" KeyPath="yes" Name="j2pkcs11.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\j2pkcs11.diz"/>
+</Component>
+<Component Guid="40973061-3f15-48a8-b5ce-1fe13ae6ed7c" Id="_40973061_3f15_48a8_b5ce_1fe13ae6ed7c" Win64="yes">
+<File DiskId="1" Id="_2f6f11a1_33e4_44a3_9e34_ca2af3eb3f52" KeyPath="yes" Name="j2pkcs11.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\j2pkcs11.dll"/>
+</Component>
+<Component Guid="03f96b51-c41b-43f4-88ad-29181c86ef61" Id="_03f96b51_c41b_43f4_88ad_29181c86ef61" Win64="yes">
+<File DiskId="1" Id="_97d61d13_afbb_47a4_b58d_befffada13a8" KeyPath="yes" Name="jaas_nt.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jaas_nt.diz"/>
+</Component>
+<Component Guid="fe8e1a23-f2b6-47fe-8af4-f40d39611456" Id="_fe8e1a23_f2b6_47fe_8af4_f40d39611456" Win64="yes">
+<File DiskId="1" Id="_d6f41b53_ea2e_4101_a9e4_fdb80695d7d9" KeyPath="yes" Name="jaas_nt.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jaas_nt.dll"/>
+</Component>
+<Component Guid="03720ae1-61f3-4716-911f-c51fd1ba1741" Id="_03720ae1_61f3_4716_911f_c51fd1ba1741" Win64="yes">
+<File DiskId="1" Id="_95ad94ee_6c0d_4ee2_83f3_6bf5dee521c1" KeyPath="yes" Name="java-rmi.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\java-rmi.exe"/>
+</Component>
+<Component Guid="fb2e19ac-5994-404b-bae7-9cae055e8a7b" Id="_fb2e19ac_5994_404b_bae7_9cae055e8a7b" Win64="yes">
+<File DiskId="1" Id="_c002d6d1_01f7_4572_b5fb_b477732ee0d6" KeyPath="yes" Name="java.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\java.diz"/>
+</Component>
+<Component Guid="568b814e-c4c9-4adf-85ba-85d0cbe985a1" Id="_568b814e_c4c9_4adf_85ba_85d0cbe985a1" Win64="yes">
+<File DiskId="1" Id="_d054c027_255b_4d31_8c21_bbb0e7239d31" KeyPath="yes" Name="java.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\java.dll"/>
+</Component>
+<Component Guid="0ebaef4c-f2a1-42da-98d3-16db3d85b2bc" Id="_0ebaef4c_f2a1_42da_98d3_16db3d85b2bc" Win64="yes">
+<File DiskId="1" Id="_cc6e3026_0125_4420_b046_bd90a3e8af43" KeyPath="yes" Name="java.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\java.exe"/>
+</Component>
+<Component Guid="8cf8c873-4993-4039-b9f3-8de3a2e4242b" Id="_8cf8c873_4993_4039_b9f3_8de3a2e4242b" Win64="yes">
+<File DiskId="1" Id="_c131c305_b9f7_48c1_b2e2_2d2421157921" KeyPath="yes" Name="javaw.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\javaw.exe"/>
+</Component>
+<Component Guid="35933e99-9d5e-4e09-a702-c9167f5772d2" Id="_35933e99_9d5e_4e09_a702_c9167f5772d2" Win64="yes">
+<File DiskId="1" Id="_08a98e3e_66e7_4363_b8fe_a6793bba0f5e" KeyPath="yes" Name="java_crw_demo.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\java_crw_demo.diz"/>
+</Component>
+<Component Guid="d5019210-c803-40f3-a922-e7144d7b107a" Id="_d5019210_c803_40f3_a922_e7144d7b107a" Win64="yes">
+<File DiskId="1" Id="_886bf650_cce8_4786_97e2_6f7f94355880" KeyPath="yes" Name="java_crw_demo.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\java_crw_demo.dll"/>
+</Component>
+<Component Guid="4f7a6fb5-0ef7-4ef1-87dd-369665e62331" Id="_4f7a6fb5_0ef7_4ef1_87dd_369665e62331" Win64="yes">
+<File DiskId="1" Id="_3e4c9dd1_2f00_452a_bf07_fc6a176e4513" KeyPath="yes" Name="jawt.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jawt.diz"/>
+</Component>
+<Component Guid="092a4c95-a70a-42a8-883a-ae77264d3906" Id="_092a4c95_a70a_42a8_883a_ae77264d3906" Win64="yes">
+<File DiskId="1" Id="_702a7cdf_0e08_4151_896c_76d0117d9970" KeyPath="yes" Name="jawt.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jawt.dll"/>
+</Component>
+<Component Guid="9045e97f-0a9e-47ef-95d8-ed88b130efc2" Id="_9045e97f_0a9e_47ef_95d8_ed88b130efc2" Win64="yes">
+<File DiskId="1" Id="_6b0e9be1_221f_46f2_9a0d_cfae403d6088" KeyPath="yes" Name="jdwp.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jdwp.diz"/>
+</Component>
+<Component Guid="651d12e0-08cd-4cda-9460-1597364932cf" Id="_651d12e0_08cd_4cda_9460_1597364932cf" Win64="yes">
+<File DiskId="1" Id="_58489497_5519_4067_bbe2_ba7639ff446e" KeyPath="yes" Name="jdwp.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jdwp.dll"/>
+</Component>
+<Component Guid="268a53cd-13b2-447f-b92f-12a13059edf2" Id="_268a53cd_13b2_447f_b92f_12a13059edf2" Win64="yes">
+<File DiskId="1" Id="_4e8d3709_3cca_4e9e_a165_6748385cfab2" KeyPath="yes" Name="jjs.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jjs.exe"/>
+</Component>
+<Component Guid="f6e14b03-c894-4204-b6fa-7f0b4fb75271" Id="_f6e14b03_c894_4204_b6fa_7f0b4fb75271" Win64="yes">
+<File DiskId="1" Id="_7f166885_ef18_4170_a145_0859dceb86be" KeyPath="yes" Name="jli.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jli.diz"/>
+</Component>
+<Component Guid="f730db48-9cb6-4124-a79a-b12c62951019" Id="_f730db48_9cb6_4124_a79a_b12c62951019" Win64="yes">
+<File DiskId="1" Id="_0ccc4cb7_4ad7_4ee8_9a27_d5c5794e714f" KeyPath="yes" Name="jli.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jli.dll"/>
+</Component>
+<Component Guid="88589562-f343-4948-ab2e-6ec14af74275" Id="_88589562_f343_4948_ab2e_6ec14af74275" Win64="yes">
+<File DiskId="1" Id="_c56f2b29_f230_426d_9a37_389e3c483ba8" KeyPath="yes" Name="jpeg.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jpeg.diz"/>
+</Component>
+<Component Guid="ec393050-55d7-4b0f-b6f2-b716ce6669af" Id="_ec393050_55d7_4b0f_b6f2_b716ce6669af" Win64="yes">
+<File DiskId="1" Id="_40e2a48b_63ab_4172_b302_67d614c5e3b1" KeyPath="yes" Name="jpeg.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jpeg.dll"/>
+</Component>
+<Component Guid="f3f48fcb-ce1b-4fea-9c9c-94c2c402e1b1" Id="_f3f48fcb_ce1b_4fea_9c9c_94c2c402e1b1" Win64="yes">
+<File DiskId="1" Id="_f2a124d2_70d9_4738_98e5_792dcc385cb2" KeyPath="yes" Name="jsdt.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jsdt.diz"/>
+</Component>
+<Component Guid="5c6383f8-c40f-4aca-9de8-918f9faab36f" Id="_5c6383f8_c40f_4aca_9de8_918f9faab36f" Win64="yes">
+<File DiskId="1" Id="_555758d6_40c5_4a8f_bd91_43c7f9dedfb6" KeyPath="yes" Name="jsdt.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jsdt.dll"/>
+</Component>
+<Component Guid="4a22980c-8a01-4b04-b9fc-d84cfbd7d1df" Id="_4a22980c_8a01_4b04_b9fc_d84cfbd7d1df" Win64="yes">
+<File DiskId="1" Id="_2bc54d65_134b_41f4_94ea_d3bf46f95336" KeyPath="yes" Name="jsound.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jsound.diz"/>
+</Component>
+<Component Guid="fbce5dd7-a09c-4248-812b-c3fdaecb49a9" Id="_fbce5dd7_a09c_4248_812b_c3fdaecb49a9" Win64="yes">
+<File DiskId="1" Id="_f1ff0762_b857_4a40_8e6d_11a87596e5d2" KeyPath="yes" Name="jsound.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jsound.dll"/>
+</Component>
+<Component Guid="d84bebbb-5cea-4dda-ab46-12f108d0c053" Id="_d84bebbb_5cea_4dda_ab46_12f108d0c053" Win64="yes">
+<File DiskId="1" Id="_d35f8f43_d614_4824_83ad_e987a4e82aa8" KeyPath="yes" Name="jsoundds.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jsoundds.diz"/>
+</Component>
+<Component Guid="5c343688-05ee-43aa-9091-e857d0cb19f1" Id="_5c343688_05ee_43aa_9091_e857d0cb19f1" Win64="yes">
+<File DiskId="1" Id="_bdd85a6f_6747_4208_b044_d3bcdad1475a" KeyPath="yes" Name="jsoundds.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\jsoundds.dll"/>
+</Component>
+<Component Guid="7c2853d2-dbe3-4bbf-9ed4-148718fe9d36" Id="_7c2853d2_dbe3_4bbf_9ed4_148718fe9d36" Win64="yes">
+<File DiskId="1" Id="_1e42074f_4b0c_4fa6_baf7_03019d36dd51" KeyPath="yes" Name="keytool.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\keytool.exe"/>
+</Component>
+<Component Guid="127851c7-6394-4008-a5e4-93c4a5f4348c" Id="_127851c7_6394_4008_a5e4_93c4a5f4348c" Win64="yes">
+<File DiskId="1" Id="_8a510dbe_15c0_4b1c_b016_45e9f9db8cf0" KeyPath="yes" Name="kinit.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\kinit.exe"/>
+</Component>
+<Component Guid="0ef643f8-7c42-44aa-aba8-eec186b49174" Id="_0ef643f8_7c42_44aa_aba8_eec186b49174" Win64="yes">
+<File DiskId="1" Id="_b566b655_8584_48d4_8064_af7554264d22" KeyPath="yes" Name="klist.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\klist.exe"/>
+</Component>
+<Component Guid="b33e407c-62ef-4483-aaf5-ae1b3ccbbc0c" Id="_b33e407c_62ef_4483_aaf5_ae1b3ccbbc0c" Win64="yes">
+<File DiskId="1" Id="_0921dd78_cea1_4d36_9d3b_a6cf59ea7d44" KeyPath="yes" Name="ktab.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\ktab.exe"/>
+</Component>
+<Component Guid="83363f6c-bbf4-4012-8579-661bcffb827f" Id="_83363f6c_bbf4_4012_8579_661bcffb827f" Win64="yes">
+<File DiskId="1" Id="_e1bc5293_f96f_4e59_b6b4_c506f4b20b9b" KeyPath="yes" Name="lcms.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\lcms.diz"/>
+</Component>
+<Component Guid="514a4f0a-699b-4503-b992-aaa45d067d88" Id="_514a4f0a_699b_4503_b992_aaa45d067d88" Win64="yes">
+<File DiskId="1" Id="_251a0e4e_30fb_46f0_9e59_1de5b220c477" KeyPath="yes" Name="lcms.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\lcms.dll"/>
+</Component>
+<Component Guid="b661b2a6-ef8e-45cd-a111-f22e94b9e35a" Id="_b661b2a6_ef8e_45cd_a111_f22e94b9e35a" Win64="yes">
+<File DiskId="1" Id="_d89a5373_2908_4518_a049_732325195b9c" KeyPath="yes" Name="management.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\management.diz"/>
+</Component>
+<Component Guid="e107255c-a9d5-4f59-ac82-8ad79033b4c9" Id="_e107255c_a9d5_4f59_ac82_8ad79033b4c9" Win64="yes">
+<File DiskId="1" Id="_e900cede_6693_4d82_a4fd_4bf4f86161a7" KeyPath="yes" Name="management.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\management.dll"/>
+</Component>
+<Component Guid="f6c6a5ec-93b8-4605-aab7-2f104988f170" Id="_f6c6a5ec_93b8_4605_aab7_2f104988f170" Win64="yes">
+<File DiskId="1" Id="_9e28f99d_d84e_46d9_913c_8ab62166871f" KeyPath="yes" Name="mlib_image.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\mlib_image.diz"/>
+</Component>
+<Component Guid="ce134404-f2bb-4172-b0bf-d1b416fd5ee5" Id="_ce134404_f2bb_4172_b0bf_d1b416fd5ee5" Win64="yes">
+<File DiskId="1" Id="_a579858f_b18f_431e_9d1f_da752f3a200c" KeyPath="yes" Name="mlib_image.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\mlib_image.dll"/>
+</Component>
+<Component Guid="556c119d-ae21-4acf-94f1-43847ccaa0e7" Id="_556c119d_ae21_4acf_94f1_43847ccaa0e7" Win64="yes">
+<File DiskId="1" Id="_a462e013_ffda_4010_94e3_18302d3354c7" KeyPath="yes" Name="msvcr100.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\msvcr100.dll"/>
+</Component>
+<Component Guid="e726c12d-da72-42f2-b0af-f531dd7eb0ba" Id="_e726c12d_da72_42f2_b0af_f531dd7eb0ba" Win64="yes">
+<File DiskId="1" Id="_55301dc0_3c60_4d85_b151_8c2a6eb4d2f4" KeyPath="yes" Name="net.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\net.diz"/>
+</Component>
+<Component Guid="494742f9-4123-47a0-95eb-3a0b1ffc7475" Id="_494742f9_4123_47a0_95eb_3a0b1ffc7475" Win64="yes">
+<File DiskId="1" Id="_192fefc0_4868_47ee_909d_9c544d55662f" KeyPath="yes" Name="net.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\net.dll"/>
+</Component>
+<Component Guid="80e37481-0b83-4883-b001-a72edecb1e19" Id="_80e37481_0b83_4883_b001_a72edecb1e19" Win64="yes">
+<File DiskId="1" Id="_865a9e9f_67bc_40a7_a6fb_2fd94c1a786b" KeyPath="yes" Name="nio.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\nio.diz"/>
+</Component>
+<Component Guid="51f14158-a28f-45bf-a3e9-559499da9a22" Id="_51f14158_a28f_45bf_a3e9_559499da9a22" Win64="yes">
+<File DiskId="1" Id="_209f6f71_004c_4ca8_a073_a9e7830aac94" KeyPath="yes" Name="nio.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\nio.dll"/>
+</Component>
+<Component Guid="d7500abc-bfc9-4170-a60b-debe511c9da1" Id="_d7500abc_bfc9_4170_a60b_debe511c9da1" Win64="yes">
+<File DiskId="1" Id="_44f0e219_c8e6_418d_9b62_0c3fdd649bf6" KeyPath="yes" Name="npt.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\npt.diz"/>
+</Component>
+<Component Guid="82a43251-22cf-4a0a-bc5e-2085322e5d55" Id="_82a43251_22cf_4a0a_bc5e_2085322e5d55" Win64="yes">
+<File DiskId="1" Id="_df04e4cc_7d9c_45cf_a439_3405a6fe25a3" KeyPath="yes" Name="npt.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\npt.dll"/>
+</Component>
+<Component Guid="40565d18-ab27-4aa0-8973-801916ba2def" Id="_40565d18_ab27_4aa0_8973_801916ba2def" Win64="yes">
+<File DiskId="1" Id="_301b91d7_29f2_4555_a04d_558153901544" KeyPath="yes" Name="orbd.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\orbd.exe"/>
+</Component>
+<Component Guid="c797b8c4-3515-473a-b76c-ae33f62d44d5" Id="_c797b8c4_3515_473a_b76c_ae33f62d44d5" Win64="yes">
+<File DiskId="1" Id="_59ff350d_6058_411a_9cda_1558db95297d" KeyPath="yes" Name="pack200.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\pack200.exe"/>
+</Component>
+<Component Guid="f03eb1dc-895a-4f17-af9b-d40eb3053cf4" Id="_f03eb1dc_895a_4f17_af9b_d40eb3053cf4" Win64="yes">
+<File DiskId="1" Id="_7f5c1bfc_d23d_4f2c_b160_a4ceddf2f1dd" KeyPath="yes" Name="policytool.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\policytool.exe"/>
+</Component>
+<Component Guid="4c1ee356-5a49-49ff-a843-66324b0076a7" Id="_4c1ee356_5a49_49ff_a843_66324b0076a7" Win64="yes">
+<File DiskId="1" Id="_c1ee39b6_9863_498e_82f6_77cbe13ef8f1" KeyPath="yes" Name="rmid.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\rmid.exe"/>
+</Component>
+<Component Guid="5ae32ab4-bdc7-4181-8223-1aa00094f4c4" Id="_5ae32ab4_bdc7_4181_8223_1aa00094f4c4" Win64="yes">
+<File DiskId="1" Id="_9d59681e_6e63_44fc_b167_66b76f338844" KeyPath="yes" Name="rmiregistry.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\rmiregistry.exe"/>
+</Component>
+<Component Guid="80aac836-dc7c-4434-bdab-e51d7a9314c3" Id="_80aac836_dc7c_4434_bdab_e51d7a9314c3" Win64="yes">
+<File DiskId="1" Id="_26891e13_c46a_4787_8902_3b975445da18" KeyPath="yes" Name="sawindbg.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\sawindbg.diz"/>
+</Component>
+<Component Guid="af7925b9-4de0-4156-bba9-494a6312a5cd" Id="_af7925b9_4de0_4156_bba9_494a6312a5cd" Win64="yes">
+<File DiskId="1" Id="_92574f02_c46e_4854_a56c_9965c69e85da" KeyPath="yes" Name="sawindbg.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\sawindbg.dll"/>
+</Component>
+<Directory Id="_aa17f3fa_e6fa_4858_818d_6c6bafda3c92" Name="server">
+<Component Guid="39e906d5-9bca-47da-8892-248d189721c5" Id="_39e906d5_9bca_47da_8892_248d189721c5" Win64="yes">
+<File DiskId="1" Id="_9992f8ee_e54f_40f2_a8a7_eb46bf6ee6f8" KeyPath="yes" Name="jvm.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\server\jvm.diz"/>
+</Component>
+<Component Guid="8f4e16e6-afcb-4756-9a91-d71740796988" Id="_8f4e16e6_afcb_4756_9a91_d71740796988" Win64="yes">
+<File DiskId="1" Id="_f60b2e4c_15b6_4a58_b03d_5f7b4cd0611f" KeyPath="yes" Name="jvm.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\server\jvm.dll"/>
+</Component>
+<Component Guid="88f117b8-5e39-4b77-8f00-9d87c2b5548e" Id="_88f117b8_5e39_4b77_8f00_9d87c2b5548e" Win64="yes">
+<File DiskId="1" Id="_cb4a5c29_9a6f_4973_ba90_ae5ba8c1b681" KeyPath="yes" Name="Xusage.txt" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\server\Xusage.txt"/>
+</Component>
+</Directory>
+<Component Guid="93f79c8d-eb54-46a8-a765-9cc03b173288" Id="_93f79c8d_eb54_46a8_a765_9cc03b173288" Win64="yes">
+<File DiskId="1" Id="_5ac7c2e6_dcc3_4eaa_aae1_6d02fd8e2157" KeyPath="yes" Name="servertool.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\servertool.exe"/>
+</Component>
+<Component Guid="d91da8a5-a2f7-46cd-9713-17169f9cfa8d" Id="_d91da8a5_a2f7_46cd_9713_17169f9cfa8d" Win64="yes">
+<File DiskId="1" Id="_161a606a_9951_42c1_a8c7_1485b5f712c9" KeyPath="yes" Name="splashscreen.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\splashscreen.diz"/>
+</Component>
+<Component Guid="b04328b5-af7a-452e-a6a8-537fe8e1c937" Id="_b04328b5_af7a_452e_a6a8_537fe8e1c937" Win64="yes">
+<File DiskId="1" Id="_b739e757_85fa_4800_b497_10929f5f173f" KeyPath="yes" Name="splashscreen.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\splashscreen.dll"/>
+</Component>
+<Component Guid="6eb1bfab-f3cd-4696-850f-34d35af3d97c" Id="_6eb1bfab_f3cd_4696_850f_34d35af3d97c" Win64="yes">
+<File DiskId="1" Id="_61ebe8e6_dc90_4c7f_a94a_5df8861c5517" KeyPath="yes" Name="sunec.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\sunec.diz"/>
+</Component>
+<Component Guid="1c7d1bcd-bbdb-4a33-a09a-1543551255f7" Id="_1c7d1bcd_bbdb_4a33_a09a_1543551255f7" Win64="yes">
+<File DiskId="1" Id="_adb83ed7_2f8f_4754_a222_49e4a702c3cf" KeyPath="yes" Name="sunec.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\sunec.dll"/>
+</Component>
+<Component Guid="ff61f96f-40ac-4aec-aa0e-7cdc7694a13c" Id="_ff61f96f_40ac_4aec_aa0e_7cdc7694a13c" Win64="yes">
+<File DiskId="1" Id="_6736dc8e_df4c_45a5_a273_61663c45b27c" KeyPath="yes" Name="sunmscapi.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\sunmscapi.diz"/>
+</Component>
+<Component Guid="5d47c303-8f24-41e0-91bc-0207512b85e7" Id="_5d47c303_8f24_41e0_91bc_0207512b85e7" Win64="yes">
+<File DiskId="1" Id="_bca6f5ea_670f_4bd8_b4f7_9862a8d8a4fa" KeyPath="yes" Name="sunmscapi.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\sunmscapi.dll"/>
+</Component>
+<Component Guid="a955087f-e966-44a9-80b5-888e2e6c9c33" Id="_a955087f_e966_44a9_80b5_888e2e6c9c33" Win64="yes">
+<File DiskId="1" Id="_68a16eb3_4048_4e92_a9ea_80de37ce21f1" KeyPath="yes" Name="tnameserv.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\tnameserv.exe"/>
+</Component>
+<Component Guid="c0b74727-3371-4375-b960-a8c361c302ea" Id="_c0b74727_3371_4375_b960_a8c361c302ea" Win64="yes">
+<File DiskId="1" Id="_0e06260a_3285_4387_9bdf_dba3e8624353" KeyPath="yes" Name="unpack.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\unpack.diz"/>
+</Component>
+<Component Guid="ed960cf5-ef93-4d93-baa6-2ff8889ede52" Id="_ed960cf5_ef93_4d93_baa6_2ff8889ede52" Win64="yes">
+<File DiskId="1" Id="_735d8207_5a33_42aa_9000_5f57386643ab" KeyPath="yes" Name="unpack.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\unpack.dll"/>
+</Component>
+<Component Guid="40dfeff6-b8ee-4e31-9097-a77f377c644a" Id="_40dfeff6_b8ee_4e31_9097_a77f377c644a" Win64="yes">
+<File DiskId="1" Id="_64bbbe32_f4de_4c7d_b7d4_84ca19a64c57" KeyPath="yes" Name="unpack200.exe" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\unpack200.exe"/>
+</Component>
+<Component Guid="73261e63-c8f1-4aa1-9c42-18c0b0ccdb45" Id="_73261e63_c8f1_4aa1_9c42_18c0b0ccdb45" Win64="yes">
+<File DiskId="1" Id="_17171df6_d718_4009_bdf2_c45980c43dc5" KeyPath="yes" Name="verify.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\verify.diz"/>
+</Component>
+<Component Guid="9723cef3-7587-4a1d-9c91-29853e4f108c" Id="_9723cef3_7587_4a1d_9c91_29853e4f108c" Win64="yes">
+<File DiskId="1" Id="_ada94954_ea46_4163_bc28_456877d373b3" KeyPath="yes" Name="verify.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\verify.dll"/>
+</Component>
+<Component Guid="82ef2068-b461-4019-b2bf-dcea8b203cd9" Id="_82ef2068_b461_4019_b2bf_dcea8b203cd9" Win64="yes">
+<File DiskId="1" Id="_506f142b_2ec1_484e_935f_de33b6e7603f" KeyPath="yes" Name="w2k_lsa_auth.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\w2k_lsa_auth.diz"/>
+</Component>
+<Component Guid="3d4037c7-c1df-47e9-81c3-65c0a03bdd9f" Id="_3d4037c7_c1df_47e9_81c3_65c0a03bdd9f" Win64="yes">
+<File DiskId="1" Id="_edca6941_9d3b_4933_8c69_2d7042ff93c7" KeyPath="yes" Name="w2k_lsa_auth.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\w2k_lsa_auth.dll"/>
+</Component>
+<Component Guid="ac4c782d-693e-4f24-b746-fea47a7477d2" Id="_ac4c782d_693e_4f24_b746_fea47a7477d2" Win64="yes">
+<File DiskId="1" Id="_dbe85be8_578d_4a61_8313_f5fec0f52730" KeyPath="yes" Name="zip.diz" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\zip.diz"/>
+</Component>
+<Component Guid="e8f9985e-50c9-471b-a815-3058c1d8dad0" Id="_e8f9985e_50c9_471b_a815_3058c1d8dad0" Win64="yes">
+<File DiskId="1" Id="_8d2e2a71_e820_41fc_84d8_84610b2e1741" KeyPath="yes" Name="zip.dll" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\bin\zip.dll"/>
+</Component>
+</Directory>
+<Directory Id="_5542ed02_e8e2_48d1_bef1_e2e3757f864f" Name="lib">
+<Directory Id="_0910b367_8a11_4870_be6c_32dc36c9035f" Name="applet"/>
+<Component Guid="631474be-a6f4-49f3-9c1b-c6440b72adac" Id="_631474be_a6f4_49f3_9c1b_c6440b72adac" Win64="yes">
+<File DiskId="1" Id="_5828c953_9f9e_401c_ac02_3fcf3fe00505" KeyPath="yes" Name="calendars.properties" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\calendars.properties"/>
+</Component>
+<Component Guid="c94183e1-f70f-4c62-aed7-a254d32dc95e" Id="_c94183e1_f70f_4c62_aed7_a254d32dc95e" Win64="yes">
+<File DiskId="1" Id="_2e488b01_fc06_4ea2_a059_7b4548d414cf" KeyPath="yes" Name="charsets.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\charsets.jar"/>
+</Component>
+<Component Guid="c9882ed6-3b9a-4973-9fa9-db4395f6cf04" Id="_c9882ed6_3b9a_4973_9fa9_db4395f6cf04" Win64="yes">
+<File DiskId="1" Id="_fb6bb53a_3f06_41f2_b92f_cbbb0fe5fec4" KeyPath="yes" Name="classlist" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\classlist"/>
+</Component>
+<Directory Id="_8374112e_d48e_40b8_a90d_480cd99d23fe" Name="cmm">
+<Component Guid="45ec090f-8ad0-4f67-ae38-462fa0579b9d" Id="_45ec090f_8ad0_4f67_ae38_462fa0579b9d" Win64="yes">
+<File DiskId="1" Id="_cdc33a7d_f66c_4fa5_9c67_31fee013c130" KeyPath="yes" Name="CIEXYZ.pf" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\cmm\CIEXYZ.pf"/>
+</Component>
+<Component Guid="7427798f-a0a1-4083-8e82-d6afc0b07a4c" Id="_7427798f_a0a1_4083_8e82_d6afc0b07a4c" Win64="yes">
+<File DiskId="1" Id="_8a36abf2_27e6_4fa4_a4f5_cff57d019f4d" KeyPath="yes" Name="GRAY.pf" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\cmm\GRAY.pf"/>
+</Component>
+<Component Guid="9de0313f-eaab-4d55-a45c-09b76bc4f914" Id="_9de0313f_eaab_4d55_a45c_09b76bc4f914" Win64="yes">
+<File DiskId="1" Id="_bca902d3_f51c_4d53_b6e9_57dff4f0be6e" KeyPath="yes" Name="LINEAR_RGB.pf" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\cmm\LINEAR_RGB.pf"/>
+</Component>
+<Component Guid="a6197677-51e3-43d7-a2c2-28ae35f86f27" Id="_a6197677_51e3_43d7_a2c2_28ae35f86f27" Win64="yes">
+<File DiskId="1" Id="_095d0459_157f_4fb1_a521_2d237f3f5d62" KeyPath="yes" Name="PYCC.pf" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\cmm\PYCC.pf"/>
+</Component>
+<Component Guid="66840459-4ed4-4789-95d9-72d7e0746789" Id="_66840459_4ed4_4789_95d9_72d7e0746789" Win64="yes">
+<File DiskId="1" Id="_406ffcf4_5213_448f_9918_a2bde3b74017" KeyPath="yes" Name="sRGB.pf" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\cmm\sRGB.pf"/>
+</Component>
+</Directory>
+<Component Guid="747569b7-d99e-43db-bfcb-3921dbeec3a7" Id="_747569b7_d99e_43db_bfcb_3921dbeec3a7" Win64="yes">
+<File DiskId="1" Id="_5f64d830_0a7c_4752_95dd_10eeedb61dfc" KeyPath="yes" Name="content-types.properties" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\content-types.properties"/>
+</Component>
+<Component Guid="6d499013-5351-4027-b18a-1f6a79587235" Id="_6d499013_5351_4027_b18a_1f6a79587235" Win64="yes">
+<File DiskId="1" Id="_78ca3389_f296_4490_bdd0_786b94ea7ce3" KeyPath="yes" Name="currency.data" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\currency.data"/>
+</Component>
+<Directory Id="_2ce0c807_6c46_482b_9273_7f53f808cb5f" Name="ext">
+<Component Guid="2835cf05-9395-491b-aa85-29775db1b79e" Id="_2835cf05_9395_491b_aa85_29775db1b79e" Win64="yes">
+<File DiskId="1" Id="_c52b3eac_4ad9_4c9c_bcbd_c94b0b8f0729" KeyPath="yes" Name="cldrdata.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\ext\cldrdata.jar"/>
+</Component>
+<Component Guid="192f7a75-375e-4ee7-b0ab-d1ce11e4b7c6" Id="_192f7a75_375e_4ee7_b0ab_d1ce11e4b7c6" Win64="yes">
+<File DiskId="1" Id="_40b167c9_ed5b_4eb5_bacb_d04a1a0b1eac" KeyPath="yes" Name="dnsns.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\ext\dnsns.jar"/>
+</Component>
+<Component Guid="1c0403ba-047f-498e-bba6-ac7f0cca10ed" Id="_1c0403ba_047f_498e_bba6_ac7f0cca10ed" Win64="yes">
+<File DiskId="1" Id="_a8293a62_a12a_4234_b572_1b951669af35" KeyPath="yes" Name="localedata.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\ext\localedata.jar"/>
+</Component>
+<Component Guid="833782b5-6718-4b61-8d78-58ac7c8f96dc" Id="_833782b5_6718_4b61_8d78_58ac7c8f96dc" Win64="yes">
+<File DiskId="1" Id="_8d709420_6417_4428_9218_0975b2da57ff" KeyPath="yes" Name="meta-index" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\ext\meta-index"/>
+</Component>
+<Component Guid="c08c7839-26bd-4817-bafa-1ac0e3d27a58" Id="_c08c7839_26bd_4817_bafa_1ac0e3d27a58" Win64="yes">
+<File DiskId="1" Id="_b7027864_0202_44f1_82cb_5546013459ff" KeyPath="yes" Name="nashorn.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\ext\nashorn.jar"/>
+</Component>
+<Component Guid="04825e90-260e-4168-9d5a-c3b743c69555" Id="_04825e90_260e_4168_9d5a_c3b743c69555" Win64="yes">
+<File DiskId="1" Id="_9b610393_f297_4f68_b362_38d06b5a99a8" KeyPath="yes" Name="sunec.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\ext\sunec.jar"/>
+</Component>
+<Component Guid="171fb0cf-c419-4045-8424-4af497e0885f" Id="_171fb0cf_c419_4045_8424_4af497e0885f" Win64="yes">
+<File DiskId="1" Id="_bbaa9236_6caf_4c7a_8599_1cac066fcaa0" KeyPath="yes" Name="sunjce_provider.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\ext\sunjce_provider.jar"/>
+</Component>
+<Component Guid="26532c0b-e1eb-4ed3-a5d5-91d6e6f80326" Id="_26532c0b_e1eb_4ed3_a5d5_91d6e6f80326" Win64="yes">
+<File DiskId="1" Id="_5787f3cd_4317_41ec_96c2_74d50a863643" KeyPath="yes" Name="sunmscapi.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\ext\sunmscapi.jar"/>
+</Component>
+<Component Guid="48c40c66-bc3e-477f-919f-8b2124fb13e6" Id="_48c40c66_bc3e_477f_919f_8b2124fb13e6" Win64="yes">
+<File DiskId="1" Id="_6b37258c_bd49_44e0_bdfb_972025230656" KeyPath="yes" Name="sunpkcs11.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\ext\sunpkcs11.jar"/>
+</Component>
+<Component Guid="137f32a2-a645-4f39-a933-63f1283c537e" Id="_137f32a2_a645_4f39_a933_63f1283c537e" Win64="yes">
+<File DiskId="1" Id="_e775af73_7aad_42f7_8b6b_eb2a50bf1ceb" KeyPath="yes" Name="zipfs.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\ext\zipfs.jar"/>
+</Component>
+</Directory>
+<Component Guid="6cba44d2-7be3-4af9-97ce-8e7192f5b07e" Id="_6cba44d2_7be3_4af9_97ce_8e7192f5b07e" Win64="yes">
+<File DiskId="1" Id="_6353c648_8b01_486b_8eca_9d36cbbd1b79" KeyPath="yes" Name="flavormap.properties" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\flavormap.properties"/>
+</Component>
+<Component Guid="e2560a56-d27c-4154-8334-1143a6c82eef" Id="_e2560a56_d27c_4154_8334_1143a6c82eef" Win64="yes">
+<File DiskId="1" Id="_cca645cb_ff49_41f6_b5c5_16fc4fd66b5a" KeyPath="yes" Name="fontconfig.bfc" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\fontconfig.bfc"/>
+</Component>
+<Component Guid="7795acf7-4afc-4ba1-8692-8fc738b63b2d" Id="_7795acf7_4afc_4ba1_8692_8fc738b63b2d" Win64="yes">
+<File DiskId="1" Id="_59db7054_a835_4360_bb47_6b26ea53d92f" KeyPath="yes" Name="fontconfig.properties.src" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\fontconfig.properties.src"/>
+</Component>
+<Component Guid="62c6b9b1-af9b-4a1c-baca-96db0d414c78" Id="_62c6b9b1_af9b_4a1c_baca_96db0d414c78" Win64="yes">
+<File DiskId="1" Id="_48274653_8f7d_43be_9234_c79ccb5c6398" KeyPath="yes" Name="hijrah-config-umalqura.properties" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\hijrah-config-umalqura.properties"/>
+</Component>
+<Directory Id="_6ad6bca4_f6b7_49c2_9f1c_9486d8f79fb1" Name="i386">
+<Component Guid="4162635f-571e-4258-8c8e-191c3049fa60" Id="_4162635f_571e_4258_8c8e_191c3049fa60" Win64="yes">
+<File DiskId="1" Id="_b18ab3d7_378a_49f7_8f8d_de75881a9c60" KeyPath="yes" Name="jvm.cfg" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\i386\jvm.cfg"/>
+</Component>
+</Directory>
+<Directory Id="_b9a9ad0e_ce08_4707_801e_4f3f7fb886fe" Name="images">
+<Directory Id="_673a0314_dcbe_42d7_98c6_f635927b9ddd" Name="cursors">
+<Component Guid="e5a3c7cd-9ea4-4f8a-bb73-2d195768f2c2" Id="_e5a3c7cd_9ea4_4f8a_bb73_2d195768f2c2" Win64="yes">
+<File DiskId="1" Id="_874fe232_9acf_4c64_a71d_56671281dfbb" KeyPath="yes" Name="cursors.properties" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\images\cursors\cursors.properties"/>
+</Component>
+<Component Guid="e7368fe4-e7ba-4afd-93f3-87cfb760c0e3" Id="_e7368fe4_e7ba_4afd_93f3_87cfb760c0e3" Win64="yes">
+<File DiskId="1" Id="_38c5ed39_34ce_43d9_8a03_14a13a22422a" KeyPath="yes" Name="invalid32x32.gif" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\images\cursors\invalid32x32.gif"/>
+</Component>
+<Component Guid="586d76f1-774a-44f9-bf12-86a8754aaf7f" Id="_586d76f1_774a_44f9_bf12_86a8754aaf7f" Win64="yes">
+<File DiskId="1" Id="_b511d7ae_f30b_4b10_a4e9_4d518abed6a7" KeyPath="yes" Name="win32_CopyDrop32x32.gif" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\images\cursors\win32_CopyDrop32x32.gif"/>
+</Component>
+<Component Guid="c9961634-7257-40a1-9aab-611a197ad2ce" Id="_c9961634_7257_40a1_9aab_611a197ad2ce" Win64="yes">
+<File DiskId="1" Id="_3bafc006_0ebb_486a_91f0_19b4f81223c9" KeyPath="yes" Name="win32_CopyNoDrop32x32.gif" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\images\cursors\win32_CopyNoDrop32x32.gif"/>
+</Component>
+<Component Guid="342a9acb-99d2-42f7-b5ac-bdaffb8d97b4" Id="_342a9acb_99d2_42f7_b5ac_bdaffb8d97b4" Win64="yes">
+<File DiskId="1" Id="_4a3b36b3_0c8c_4294_ae7c_608cb8c264ec" KeyPath="yes" Name="win32_LinkDrop32x32.gif" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\images\cursors\win32_LinkDrop32x32.gif"/>
+</Component>
+<Component Guid="25e664d5-0de6-459c-bace-db127b5511d1" Id="_25e664d5_0de6_459c_bace_db127b5511d1" Win64="yes">
+<File DiskId="1" Id="_9c855612_9eb5_436d_bc25_c3e9e804b4f3" KeyPath="yes" Name="win32_LinkNoDrop32x32.gif" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\images\cursors\win32_LinkNoDrop32x32.gif"/>
+</Component>
+<Component Guid="7e916862-9fb9-4396-ba32-6e8aadec9aef" Id="_7e916862_9fb9_4396_ba32_6e8aadec9aef" Win64="yes">
+<File DiskId="1" Id="_5d397f29_a23e_4ef8_8c12_b41960d7385f" KeyPath="yes" Name="win32_MoveDrop32x32.gif" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\images\cursors\win32_MoveDrop32x32.gif"/>
+</Component>
+<Component Guid="b45698c7-1406-4f70-9a2b-31f3ee3477ab" Id="_b45698c7_1406_4f70_9a2b_31f3ee3477ab" Win64="yes">
+<File DiskId="1" Id="_586be59f_ecaf_47aa_9874_9b57082cfc90" KeyPath="yes" Name="win32_MoveNoDrop32x32.gif" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\images\cursors\win32_MoveNoDrop32x32.gif"/>
+</Component>
+</Directory>
+</Directory>
+<Component Guid="7b616ef4-a217-47bc-9305-caba40b6958e" Id="_7b616ef4_a217_47bc_9305_caba40b6958e" Win64="yes">
+<File DiskId="1" Id="_6d0d320b_6230_46cd_943a_6e8d95c1c84c" KeyPath="yes" Name="jce.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\jce.jar"/>
+</Component>
+<Component Guid="9802a641-80a7-4ca5-884f-d8d5970d9c62" Id="_9802a641_80a7_4ca5_884f_d8d5970d9c62" Win64="yes">
+<File DiskId="1" Id="_ecc9edfb_df1a_4ecb_b1b0_3d8d509e7602" KeyPath="yes" Name="jsse.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\jsse.jar"/>
+</Component>
+<Component Guid="8c9a0996-db9c-44d0-a5de-c41cff644f19" Id="_8c9a0996_db9c_44d0_a5de_c41cff644f19" Win64="yes">
+<File DiskId="1" Id="_8de997e0_c04a_4ab0_9ccf_51fa0acecd8d" KeyPath="yes" Name="jvm.hprof.txt" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\jvm.hprof.txt"/>
+</Component>
+<Component Guid="6a4d566e-032e-442f-896c-038e98a6e0ae" Id="_6a4d566e_032e_442f_896c_038e98a6e0ae" Win64="yes">
+<File DiskId="1" Id="_fb6ccd05_077f_4343_8fce_623bbcacd237" KeyPath="yes" Name="logging.properties" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\logging.properties"/>
+</Component>
+<Directory Id="_d5536521_ebbd_4a12_8639_8a5a8e725986" Name="management">
+<Component Guid="088dd35d-38cf-46e4-9c96-1551af2def22" Id="_088dd35d_38cf_46e4_9c96_1551af2def22" Win64="yes">
+<File DiskId="1" Id="_85118879_61ad_4400_b68c_a85045b41f26" KeyPath="yes" Name="jmxremote.access" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\management\jmxremote.access"/>
+</Component>
+<Component Guid="aa076b20-ea1a-4547-880e-a46e7fcf5600" Id="_aa076b20_ea1a_4547_880e_a46e7fcf5600" Win64="yes">
+<File DiskId="1" Id="_50402220_9d3c_428b_a3cb_078fe4909ecf" KeyPath="yes" Name="jmxremote.password.template" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\management\jmxremote.password.template"/>
+</Component>
+<Component Guid="8a09c504-cdef-43f0-9e54-a817c4ee2b52" Id="_8a09c504_cdef_43f0_9e54_a817c4ee2b52" Win64="yes">
+<File DiskId="1" Id="_acef4a23_d824_4e75_9fc6_6fc0c28e173a" KeyPath="yes" Name="management.properties" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\management\management.properties"/>
+</Component>
+<Component Guid="491aeed8-0ae4-4920-a5b7-de6cf06f7444" Id="_491aeed8_0ae4_4920_a5b7_de6cf06f7444" Win64="yes">
+<File DiskId="1" Id="_72df7250_b384_46ca_b14b_7655b935d921" KeyPath="yes" Name="snmp.acl.template" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\management\snmp.acl.template"/>
+</Component>
+</Directory>
+<Component Guid="c45e3285-4529-4f40-9e26-cac3cbc5840e" Id="_c45e3285_4529_4f40_9e26_cac3cbc5840e" Win64="yes">
+<File DiskId="1" Id="_580a6c06_d900_4da7_afa5_9d53fe7a41d9" KeyPath="yes" Name="management-agent.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\management-agent.jar"/>
+</Component>
+<Component Guid="81a9dd33-4100-4471-8579-8913e7491e92" Id="_81a9dd33_4100_4471_8579_8913e7491e92" Win64="yes">
+<File DiskId="1" Id="_8f39addd_1ad5_4582_9dcb_a8a0d8b1745b" KeyPath="yes" Name="meta-index" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\meta-index"/>
+</Component>
+<Component Guid="20509ecf-77de-4468-b1e9-86856a2efa04" Id="_20509ecf_77de_4468_b1e9_86856a2efa04" Win64="yes">
+<File DiskId="1" Id="_d8c5c982_206b_4113_a27c_441dd8accd58" KeyPath="yes" Name="net.properties" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\net.properties"/>
+</Component>
+<Component Guid="612a65d6-3801-4140-922e-f974c16f6a21" Id="_612a65d6_3801_4140_922e_f974c16f6a21" Win64="yes">
+<File DiskId="1" Id="_cb6fbec5_6573_42eb_ac38_0497829d7690" KeyPath="yes" Name="psfont.properties.ja" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\psfont.properties.ja"/>
+</Component>
+<Component Guid="24a60fe1-8d9a-437e-a360-c8081da733da" Id="_24a60fe1_8d9a_437e_a360_c8081da733da" Win64="yes">
+<File DiskId="1" Id="_dcd7e04b_ea96_4ec3_aeb0_1693967f4720" KeyPath="yes" Name="psfontj2d.properties" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\psfontj2d.properties"/>
+</Component>
+<Component Guid="8d10bb3d-1d64-482f-a81c-a4b12d81d77f" Id="_8d10bb3d_1d64_482f_a81c_a4b12d81d77f" Win64="yes">
+<File DiskId="1" Id="_8dd78b68_57db_42c1_b107_96a846d55171" KeyPath="yes" Name="resources.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\resources.jar"/>
+</Component>
+<Component Guid="c76e0cfb-3b3c-4692-93f2-1d9f8c00aa3f" Id="_c76e0cfb_3b3c_4692_93f2_1d9f8c00aa3f" Win64="yes">
+<File DiskId="1" Id="_4c11a0a3_2512_4d0f_8377_eb4563b7089f" KeyPath="yes" Name="rt.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\rt.jar"/>
+</Component>
+<Directory Id="_9a663869_98f8_436c_a40b_1fb8361e0a29" Name="security">
+<Component Guid="52a49b6f-b7e7-4b70-8515-291f419bd53d" Id="_52a49b6f_b7e7_4b70_8515_291f419bd53d" Win64="yes">
+<File DiskId="1" Id="_01eda00c_20a7_4601_88ab_b06542577dc3" KeyPath="yes" Name="blacklisted.certs" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\security\blacklisted.certs"/>
+</Component>
+<Component Guid="ad2bf2dc-4156-4274-aea9-381285d1c2cf" Id="_ad2bf2dc_4156_4274_aea9_381285d1c2cf" Win64="yes">
+<File DiskId="1" Id="_18402990_4076_4745_92cb_364a11e91b2c" KeyPath="yes" Name="cacerts" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\security\cacerts"/>
+</Component>
+<Component Guid="e3048648-26d0-4e33-ad0a-6ce83c101374" Id="_e3048648_26d0_4e33_ad0a_6ce83c101374" Win64="yes">
+<File DiskId="1" Id="_68074219_7a0c_40f6_86f1_96bc737a0652" KeyPath="yes" Name="java.policy" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\security\java.policy"/>
+</Component>
+<Component Guid="0c727c46-86b5-4314-86fe-a6a2909db59a" Id="_0c727c46_86b5_4314_86fe_a6a2909db59a" Win64="yes">
+<File DiskId="1" Id="_7e7fd57c_698a_4eb2_bb93_29899b6c0140" KeyPath="yes" Name="java.security" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\security\java.security"/>
+</Component>
+<Component Guid="9fb3f96c-dc9a-48fe-8594-593aa18f6525" Id="_9fb3f96c_dc9a_48fe_8594_593aa18f6525" Win64="yes">
+<File DiskId="1" Id="_0eca4015_0a83_4379_ae9b_40526973b87c" KeyPath="yes" Name="local_policy.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\security\local_policy.jar"/>
+</Component>
+<Component Guid="4cd13b09-5f74-4daa-973e-2d53b433a881" Id="_4cd13b09_5f74_4daa_973e_2d53b433a881" Win64="yes">
+<File DiskId="1" Id="_cdc05942_208e_4a21_b90c_5633e4fc9eab" KeyPath="yes" Name="US_export_policy.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\security\US_export_policy.jar"/>
+</Component>
+</Directory>
+<Component Guid="92b7c81a-f2d2-45af-8abc-15aac7d197bf" Id="_92b7c81a_f2d2_45af_8abc_15aac7d197bf" Win64="yes">
+<File DiskId="1" Id="_e1c2b892_7c86_43f5_a8ba_662c45a608ec" KeyPath="yes" Name="sound.properties" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\sound.properties"/>
+</Component>
+<Component Guid="d3ed4bf3-badd-45b6-b193-2349c857ea65" Id="_d3ed4bf3_badd_45b6_b193_2349c857ea65" Win64="yes">
+<File DiskId="1" Id="_0be664fb_2ee9_4e0b_a249_b68e08b3e107" KeyPath="yes" Name="tzdb.dat" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\tzdb.dat"/>
+</Component>
+<Component Guid="896f577a-dd47-4ab2-8d29-e9056e8b7ca0" Id="_896f577a_dd47_4ab2_8d29_e9056e8b7ca0" Win64="yes">
+<File DiskId="1" Id="_dca3e4a5_fe67_4f65_9e32_4c36a3a732a0" KeyPath="yes" Name="tzmappings" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\lib\tzmappings"/>
+</Component>
+</Directory>
+<Component Guid="2fcb60dc-cfe9-43ef-b4e0-31506261dc8c" Id="_2fcb60dc_cfe9_43ef_b4e0_31506261dc8c" Win64="yes">
+<File DiskId="1" Id="_0f80a500_eb1a_411a_a6d4_a9150983f038" KeyPath="yes" Name="LICENSE" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\LICENSE"/>
+</Component>
+<Component Guid="d314e3e6-682f-4077-a876-c6abaf2387bc" Id="_d314e3e6_682f_4077_a876_c6abaf2387bc" Win64="yes">
+<File DiskId="1" Id="_76579405_6428_45d0_98a0_dba9130bae62" KeyPath="yes" Name="THIRD_PARTY_README" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\jre\THIRD_PARTY_README"/>
+</Component>
+</Directory>
+<Directory Id="_e9b1f5ed_aee6_45b6_8aa2_a74352efb24b" Name="libs">
+<Component Guid="7dcf36c4-37ec-47d5-9d94-c9bbb6cf4a4c" Id="_7dcf36c4_37ec_47d5_9d94_c9bbb6cf4a4c" Win64="yes">
+<File DiskId="1" Id="_06a15c29_0eca_4f86_a8a4_517f069aded1" KeyPath="yes" Name="aether-api-1.7.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\aether-api-1.7.jar"/>
+</Component>
+<Component Guid="2ae91eb5-a31d-475a-840c-00177b9f5814" Id="_2ae91eb5_a31d_475a_840c_00177b9f5814" Win64="yes">
+<File DiskId="1" Id="_989e0668_5707_4622_8991_a957128729fd" KeyPath="yes" Name="aether-impl-1.7.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\aether-impl-1.7.jar"/>
+</Component>
+<Component Guid="b0e9447d-e607-4207-9e05-e6a7e09283ca" Id="_b0e9447d_e607_4207_9e05_e6a7e09283ca" Win64="yes">
+<File DiskId="1" Id="_0b8d6f12_af5e_450b_9e2c_dc7c9b7b49d0" KeyPath="yes" Name="aether-spi-1.7.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\aether-spi-1.7.jar"/>
+</Component>
+<Component Guid="443d4363-e90b-400e-8a82-51f5cf8103c3" Id="_443d4363_e90b_400e_8a82_51f5cf8103c3" Win64="yes">
+<File DiskId="1" Id="_7237b9c9_4ca6_4314_9f64_a07f21d1bbd6" KeyPath="yes" Name="aether-util-1.7.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\aether-util-1.7.jar"/>
+</Component>
+<Component Guid="d447fb54-b744-4238-b760-bdd7c75a46b5" Id="_d447fb54_b744_4238_b760_bdd7c75a46b5" Win64="yes">
+<File DiskId="1" Id="_f3a29d92_6d03_4374_b938_5dff75e2d088" KeyPath="yes" Name="ant-1.8.2.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\ant-1.8.2.jar"/>
+</Component>
+<Component Guid="f22ee457-2a67-4206-9765-57b102b77a5d" Id="_f22ee457_2a67_4206_9765_57b102b77a5d" Win64="yes">
+<File DiskId="1" Id="_7de03625_4c17_4f7b_8505_e8088d76ac08" KeyPath="yes" Name="ant-launcher-1.8.2.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\ant-launcher-1.8.2.jar"/>
+</Component>
+<Component Guid="9e2f6391-b858-43fe-af04-6514eb50664c" Id="_9e2f6391_b858_43fe_af04_6514eb50664c" Win64="yes">
+<File DiskId="1" Id="_f66c00d1_9f17_498b_b484_13b6cc6c119f" KeyPath="yes" Name="backport-util-concurrent-3.1.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\backport-util-concurrent-3.1.jar"/>
+</Component>
+<Component Guid="05beee7f-aa16-4cc7-bf89-53ab9ab82522" Id="_05beee7f_aa16_4cc7_bf89_53ab9ab82522" Win64="yes">
+<File DiskId="1" Id="_b55fcefd_0204_41bd_86fa_4d4e913b4aae" KeyPath="yes" Name="classworlds-1.1-alpha-2.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\classworlds-1.1-alpha-2.jar"/>
+</Component>
+<Component Guid="25872c5e-10fb-4f28-913b-b272c4ac4b02" Id="_25872c5e_10fb_4f28_913b_b272c4ac4b02" Win64="yes">
+<File DiskId="1" Id="_788a6abb_6f17_4f1a_b9f1_e7d3f67333f9" KeyPath="yes" Name="commons-beanutils-1.7.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\commons-beanutils-1.7.0.jar"/>
+</Component>
+<Component Guid="a4319a05-f434-4b99-b7d6-ecf8ff9f8ff5" Id="_a4319a05_f434_4b99_b7d6_ecf8ff9f8ff5" Win64="yes">
+<File DiskId="1" Id="_d417cbde_503b_4313_8daa_0b58ec46f45a" KeyPath="yes" Name="commons-collections4-4.1.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\commons-collections4-4.1.jar"/>
+</Component>
+<Component Guid="4b92b67b-33bb-4da7-8f44-ebe6901062d7" Id="_4b92b67b_33bb_4da7_8f44_ebe6901062d7" Win64="yes">
+<File DiskId="1" Id="_ab20f115_2dd6_484b_b612_2e8e9b13f7c5" KeyPath="yes" Name="commons-compress-1.19.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\commons-compress-1.19.jar"/>
+</Component>
+<Component Guid="9adb963b-6324-4105-97f0-c9f3ada12348" Id="_9adb963b_6324_4105_97f0_c9f3ada12348" Win64="yes">
+<File DiskId="1" Id="_93af09ac_1caf_455a_a4e4_133ebffa8be5" KeyPath="yes" Name="commons-io-2.6.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\commons-io-2.6.jar"/>
+</Component>
+<Component Guid="6b3fbd22-9ded-4a37-ad02-d853e8b3566e" Id="_6b3fbd22_9ded_4a37_ad02_d853e8b3566e" Win64="yes">
+<File DiskId="1" Id="_eaf3a0d5_66ac_4542_b1b6_af3f570006dc" KeyPath="yes" Name="commons-lang3-3.4.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\commons-lang3-3.4.jar"/>
+</Component>
+<Component Guid="f18bee83-b3bf-4d81-9bce-cc66642c9d1d" Id="_f18bee83_b3bf_4d81_9bce_cc66642c9d1d" Win64="yes">
+<File DiskId="1" Id="_e2d81c47_2583_4697_9bcc_65f1bd66fa54" KeyPath="yes" Name="commons-logging-1.2.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\commons-logging-1.2.jar"/>
+</Component>
+<Component Guid="45ffc045-0c15-420b-8a2c-dca7de18ce07" Id="_45ffc045_0c15_420b_8a2c_dca7de18ce07" Win64="yes">
+<File DiskId="1" Id="_14faed5a_841f_4584_ad3f_7bfd962365a1" KeyPath="yes" Name="file-management-3.0.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\file-management-3.0.0.jar"/>
+</Component>
+<Component Guid="54e9f973-cce3-419d-84de-ae57c3316073" Id="_54e9f973_cce3_419d_84de_ae57c3316073" Win64="yes">
+<File DiskId="1" Id="_d6ee09fd_a63f_4e04_bc94_84ff852bd8f7" KeyPath="yes" Name="flatlaf-0.38.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\flatlaf-0.38.jar"/>
+</Component>
+<Component Guid="16099f12-739f-4ead-a287-e852dcfec834" Id="_16099f12_739f_4ead_a287_e852dcfec834" Win64="yes">
+<File DiskId="1" Id="_296ae820_13d2_4720_b4bc_e472359e7f31" KeyPath="yes" Name="forms-1.2.1.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\forms-1.2.1.jar"/>
+</Component>
+<Component Guid="e0653e09-9723-47d9-b365-ab0827d02f81" Id="_e0653e09_9723_47d9_b365_ab0827d02f81" Win64="yes">
+<File DiskId="1" Id="_4d001029_94b4_4cc4_ba92_081cc2cf586e" KeyPath="yes" Name="foxtrot-2.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\foxtrot-2.0.jar"/>
+</Component>
+<Component Guid="b69c3be3-742c-439d-9129-51226159fe26" Id="_b69c3be3_742c_439d_9129_51226159fe26" Win64="yes">
+<File DiskId="1" Id="_ebb4f80e_66af_4663_8a71_16d973484bbe" KeyPath="yes" Name="javapackager-1.1.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\javapackager-1.1.0.jar"/>
+</Component>
+<Component Guid="25d220df-bef4-405a-aff7-0b779754c24c" Id="_25d220df_bef4_405a_aff7_0b779754c24c" Win64="yes">
+<File DiskId="1" Id="_cd736054_aad5_4b9f_9f05_e6138eda351d" KeyPath="yes" Name="jgoodies-common-1.7.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\jgoodies-common-1.7.0.jar"/>
+</Component>
+<Component Guid="79e3ea18-8f03-4564-b5e7-28e09e46baf9" Id="_79e3ea18_8f03_4564_b5e7_28e09e46baf9" Win64="yes">
+<File DiskId="1" Id="_1d6f195d_5187_4ea3_b6dd_470a67d3cca9" KeyPath="yes" Name="junit-3.8.1.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\junit-3.8.1.jar"/>
+</Component>
+<Component Guid="bd2a07be-ea92-4966-ab0e-413726129d83" Id="_bd2a07be_ea92_4966_ab0e_413726129d83" Win64="yes">
+<File DiskId="1" Id="_fb64cde4_ca43_4928_a24a_705513b0f2ec" KeyPath="yes" Name="launch4j-3.12-core.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\launch4j-3.12-core.jar"/>
+</Component>
+<Component Guid="9f3bdec6-f2ab-4e2c-8258-604909ab699c" Id="_9f3bdec6_f2ab_4e2c_8258_604909ab699c" Win64="yes">
+<File DiskId="1" Id="_87edff6c_3fcb_428a_a398_a3daf935971d" KeyPath="yes" Name="launch4j-maven-plugin-1.7.25.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\launch4j-maven-plugin-1.7.25.jar"/>
+</Component>
+<Component Guid="995a1f0d-1f93-415e-9f07-51f6fe53aabc" Id="_995a1f0d_1f93_415e_9f07_51f6fe53aabc" Win64="yes">
+<File DiskId="1" Id="_45ec08f0_a90e_44c2_83c8_9828a827ec08" KeyPath="yes" Name="looks-2.2.2.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\looks-2.2.2.jar"/>
+</Component>
+<Component Guid="46446e44-d025-41fe-aad8-006e03b53656" Id="_46446e44_d025_41fe_aad8_006e03b53656" Win64="yes">
+<File DiskId="1" Id="_44742ebd_ddd5_4680_857b_cf85a573ef0e" KeyPath="yes" Name="maven-aether-provider-3.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-aether-provider-3.0.jar"/>
+</Component>
+<Component Guid="0293c2a9-b540-4009-aa36-f9391d3648a9" Id="_0293c2a9_b540_4009_aa36_f9391d3648a9" Win64="yes">
+<File DiskId="1" Id="_3d18b397_669f_4ef0_adf5_9f893926e565" KeyPath="yes" Name="maven-archiver-3.5.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-archiver-3.5.0.jar"/>
+</Component>
+<Component Guid="cfd4ab69-a2e8-4665-8d43-c32e014ce41a" Id="_cfd4ab69_a2e8_4665_8d43_c32e014ce41a" Win64="yes">
+<File DiskId="1" Id="_b2f7605c_c80c_4855_80c3_3d4248c2188a" KeyPath="yes" Name="maven-artifact-3.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-artifact-3.0.jar"/>
+</Component>
+<Component Guid="cf1d9d0f-e5cd-421f-a4dd-cec2f150aba0" Id="_cf1d9d0f_e5cd_421f_a4dd_cec2f150aba0" Win64="yes">
+<File DiskId="1" Id="_120253f8_9acb_4933_99a6_827cf4d5ab83" KeyPath="yes" Name="maven-artifact-manager-2.2.1.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-artifact-manager-2.2.1.jar"/>
+</Component>
+<Component Guid="c901347d-97f3-49d0-baf7-c0243433cbce" Id="_c901347d_97f3_49d0_baf7_c0243433cbce" Win64="yes">
+<File DiskId="1" Id="_02156ff7_8c72_45ef_ab46_4cb8f3021dab" KeyPath="yes" Name="maven-compat-3.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-compat-3.0.jar"/>
+</Component>
+<Component Guid="cf56cd62-081a-4411-823c-506b6d6b511a" Id="_cf56cd62_081a_4411_823c_506b6d6b511a" Win64="yes">
+<File DiskId="1" Id="_32b4fe9b_a86c_485f_8432_b6ce806b13bf" KeyPath="yes" Name="maven-core-3.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-core-3.0.jar"/>
+</Component>
+<Component Guid="c40959ef-05d9-4c18-88fd-637ebf49a7dd" Id="_c40959ef_05d9_4c18_88fd_637ebf49a7dd" Win64="yes">
+<File DiskId="1" Id="_c1e8df7a_cb6d_47d0_9d93_529f2e73990c" KeyPath="yes" Name="maven-jar-plugin-3.2.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-jar-plugin-3.2.0.jar"/>
+</Component>
+<Component Guid="9f206608-9911-4514-9656-a19e0f3bd4a4" Id="_9f206608_9911_4514_9656_a19e0f3bd4a4" Win64="yes">
+<File DiskId="1" Id="_06958280_4580_4227_bf66_57854f52cd7a" KeyPath="yes" Name="maven-model-3.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-model-3.0.jar"/>
+</Component>
+<Component Guid="75559c0a-943f-4198-a83f-d94262406bc9" Id="_75559c0a_943f_4198_a83f_d94262406bc9" Win64="yes">
+<File DiskId="1" Id="_de190d4d_4d28_4f34_b3ff_bb5d5253aca0" KeyPath="yes" Name="maven-model-builder-3.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-model-builder-3.0.jar"/>
+</Component>
+<Component Guid="7a3943a8-4186-4aa2-a820-d13c225edfc9" Id="_7a3943a8_4186_4aa2_a820_d13c225edfc9" Win64="yes">
+<File DiskId="1" Id="_39e7ef02_c172_4eed_9637_655702556353" KeyPath="yes" Name="maven-plugin-api-3.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-plugin-api-3.0.jar"/>
+</Component>
+<Component Guid="9768b986-754e-4911-998e-f116dada482d" Id="_9768b986_754e_4911_998e_f116dada482d" Win64="yes">
+<File DiskId="1" Id="_55c5385f_eb01_4d6a_ba79_4b5fd77ccbae" KeyPath="yes" Name="maven-plugin-descriptor-2.2.1.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-plugin-descriptor-2.2.1.jar"/>
+</Component>
+<Component Guid="7a3899d3-d996-4d0b-a57c-5766b6478da6" Id="_7a3899d3_d996_4d0b_a57c_5766b6478da6" Win64="yes">
+<File DiskId="1" Id="_8c484f47_a44f_4e3c_bbc7_c8f4edc45b47" KeyPath="yes" Name="maven-plugin-registry-2.2.1.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-plugin-registry-2.2.1.jar"/>
+</Component>
+<Component Guid="69faf664-d1ed-4f71-ac64-1a6a2412e7bf" Id="_69faf664_d1ed_4f71_ac64_1a6a2412e7bf" Win64="yes">
+<File DiskId="1" Id="_71a108c4_7739_410b_a28f_cc09cbba8246" KeyPath="yes" Name="maven-profile-2.2.1.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-profile-2.2.1.jar"/>
+</Component>
+<Component Guid="1ce7f440-8c2d-49f6-9c43-83266af7b3b3" Id="_1ce7f440_8c2d_49f6_9c43_83266af7b3b3" Win64="yes">
+<File DiskId="1" Id="_4fc3c590_6c8d_4d74_9568_6f8a47f912fd" KeyPath="yes" Name="maven-project-2.2.1.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-project-2.2.1.jar"/>
+</Component>
+<Component Guid="cd3d401d-001b-4388-86c9-102b3cd57f25" Id="_cd3d401d_001b_4388_86c9_102b3cd57f25" Win64="yes">
+<File DiskId="1" Id="_085a45b9_37d5_48e3_a6f9_612870978fd2" KeyPath="yes" Name="maven-repository-metadata-3.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-repository-metadata-3.0.jar"/>
+</Component>
+<Component Guid="82d8c60d-9df7-47e1-bf91-bf0247b677de" Id="_82d8c60d_9df7_47e1_bf91_bf0247b677de" Win64="yes">
+<File DiskId="1" Id="_1d6fdb7e_7d75_421f_8c38_49c5dbe81fc6" KeyPath="yes" Name="maven-settings-3.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-settings-3.0.jar"/>
+</Component>
+<Component Guid="943b0c70-4813-4572-9258-5081fa1d2994" Id="_943b0c70_4813_4572_9258_5081fa1d2994" Win64="yes">
+<File DiskId="1" Id="_0a4c2405_6ec1_4525_9c17_172b053aba46" KeyPath="yes" Name="maven-settings-builder-3.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-settings-builder-3.0.jar"/>
+</Component>
+<Component Guid="4f37e645-4f41-4cce-a039-154224a19273" Id="_4f37e645_4f41_4cce_a039_154224a19273" Win64="yes">
+<File DiskId="1" Id="_fb6853d3_41ba_46b1_bbc5_5331c03205f2" KeyPath="yes" Name="maven-shared-io-3.0.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-shared-io-3.0.0.jar"/>
+</Component>
+<Component Guid="11b59297-4bbd-4d48-84f5-52a1274473cd" Id="_11b59297_4bbd_4d48_84f5_52a1274473cd" Win64="yes">
+<File DiskId="1" Id="_1d215618_be40_410a_9866_358782c4e68e" KeyPath="yes" Name="maven-shared-utils-3.2.1.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\maven-shared-utils-3.2.1.jar"/>
+</Component>
+<Component Guid="eea1b87a-8b29-424c-9da6-7cd8f46de64a" Id="_eea1b87a_8b29_424c_9da6_7cd8f46de64a" Win64="yes">
+<File DiskId="1" Id="_b7dd658a_289b_4f99_ab2f_0436b8486106" KeyPath="yes" Name="mojo-executor-2.3.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\mojo-executor-2.3.0.jar"/>
+</Component>
+<Component Guid="66f9713b-5124-4dfb-b82e-ea11ad0b3cbc" Id="_66f9713b_5124_4dfb_b82e_ea11ad0b3cbc" Win64="yes">
+<File DiskId="1" Id="_2c0e3012_8fde_4cac_b9a8_1a8ed61ef014" KeyPath="yes" Name="plexus-archiver-4.2.1.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\plexus-archiver-4.2.1.jar"/>
+</Component>
+<Component Guid="cef146d3-7cba-4f7c-94e6-33b05d50e9f6" Id="_cef146d3_7cba_4f7c_94e6_33b05d50e9f6" Win64="yes">
+<File DiskId="1" Id="_f94f78d3_171f_43d4_94c7_003be870df72" KeyPath="yes" Name="plexus-cipher-1.4.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\plexus-cipher-1.4.jar"/>
+</Component>
+<Component Guid="26faf224-db4b-4e6d-8507-05212e7c364c" Id="_26faf224_db4b_4e6d_8507_05212e7c364c" Win64="yes">
+<File DiskId="1" Id="_8ca6643b_b03d_4463_8ace_eaee3d401baf" KeyPath="yes" Name="plexus-classworlds-2.2.3.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\plexus-classworlds-2.2.3.jar"/>
+</Component>
+<Component Guid="2d27d803-3338-4772-9f8b-6a244edd54d8" Id="_2d27d803_3338_4772_9f8b_6a244edd54d8" Win64="yes">
+<File DiskId="1" Id="_af042975_8982_460f_a45b_264bc2115da3" KeyPath="yes" Name="plexus-component-annotations-1.5.5.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\plexus-component-annotations-1.5.5.jar"/>
+</Component>
+<Component Guid="cc5bd7ec-3052-468f-b467-c93a41b55517" Id="_cc5bd7ec_3052_468f_b467_c93a41b55517" Win64="yes">
+<File DiskId="1" Id="_3eeae9f5_b35a_4753_954d_982a33b87ce0" KeyPath="yes" Name="plexus-container-default-1.0-alpha-9-stable-1.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\plexus-container-default-1.0-alpha-9-stable-1.jar"/>
+</Component>
+<Component Guid="35509608-3734-4743-92f8-f914dff78add" Id="_35509608_3734_4743_92f8_f914dff78add" Win64="yes">
+<File DiskId="1" Id="_93eb2d18_e018_436c_835e_d85732a89999" KeyPath="yes" Name="plexus-interpolation-1.14.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\plexus-interpolation-1.14.jar"/>
+</Component>
+<Component Guid="b81c5b5b-9a15-4b1e-a013-82bc4487801b" Id="_b81c5b5b_9a15_4b1e_a013_82bc4487801b" Win64="yes">
+<File DiskId="1" Id="_e9d227ed_e3f3_4399_9fdd_047c385dbf32" KeyPath="yes" Name="plexus-io-3.2.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\plexus-io-3.2.0.jar"/>
+</Component>
+<Component Guid="518ade00-c120-4bc6-b183-cdba64d84d4e" Id="_518ade00_c120_4bc6_b183_cdba64d84d4e" Win64="yes">
+<File DiskId="1" Id="_8b3262ad_e94f_4ef5_a816_897a484f89dd" KeyPath="yes" Name="plexus-sec-dispatcher-1.3.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\plexus-sec-dispatcher-1.3.jar"/>
+</Component>
+<Component Guid="c2651738-ce68-49ea-9d78-aaf78b5a756e" Id="_c2651738_ce68_49ea_9d78_aaf78b5a756e" Win64="yes">
+<File DiskId="1" Id="_60f563ba_7f9b_4466_8dc7_59a9b766e82f" KeyPath="yes" Name="plexus-utils-3.3.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\plexus-utils-3.3.0.jar"/>
+</Component>
+<Component Guid="aa4cd009-4515-4ae1-ada3-08714a58f4ee" Id="_aa4cd009_4515_4ae1_ada3_08714a58f4ee" Win64="yes">
+<File DiskId="1" Id="_9458a674_4296_4e1d_8db7_32ebad85fff8" KeyPath="yes" Name="sisu-guice-2.1.7-noaop.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\sisu-guice-2.1.7-noaop.jar"/>
+</Component>
+<Component Guid="a1962cf4-0324-4c69-b771-96df48b71901" Id="_a1962cf4_0324_4c69_b771_96df48b71901" Win64="yes">
+<File DiskId="1" Id="_08b85755_fabe_4f38_a43a_9d3617197fe7" KeyPath="yes" Name="sisu-inject-bean-1.4.2.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\sisu-inject-bean-1.4.2.jar"/>
+</Component>
+<Component Guid="abb10aa2-ac05-414a-9dce-da327195eaed" Id="_abb10aa2_ac05_414a_9dce_da327195eaed" Win64="yes">
+<File DiskId="1" Id="_7f9d73ca_c70d_43a6_9e57_5e46b39f6ba3" KeyPath="yes" Name="sisu-inject-plexus-1.4.2.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\sisu-inject-plexus-1.4.2.jar"/>
+</Component>
+<Component Guid="6f13d4af-af60-4b04-825a-e7f68027515b" Id="_6f13d4af_af60_4b04_825a_e7f68027515b" Win64="yes">
+<File DiskId="1" Id="_57024deb_9359_466e_9289_45c779c8fc65" KeyPath="yes" Name="slf4j-api-1.7.22.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\slf4j-api-1.7.22.jar"/>
+</Component>
+<Component Guid="421c6550-00a2-48cb-b6b2-fac6029280ae" Id="_421c6550_00a2_48cb_b6b2_fac6029280ae" Win64="yes">
+<File DiskId="1" Id="_9de22f54_f566_4e0c_9ef1_a5e2203ccd9d" KeyPath="yes" Name="slf4j-simple-1.7.22.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\slf4j-simple-1.7.22.jar"/>
+</Component>
+<Component Guid="e14a8797-2255-4c2c-8dbd-225b766f6cc1" Id="_e14a8797_2255_4c2c_8dbd_225b766f6cc1" Win64="yes">
+<File DiskId="1" Id="_12e39d32_ab6b_4e61_a1af_3bd2c33aecde" KeyPath="yes" Name="snappy-0.4.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\snappy-0.4.jar"/>
+</Component>
+<Component Guid="64a5ec33-5e5a-45bb-a1f3-d54a8efaf51c" Id="_64a5ec33_5e5a_45bb_a1f3_d54a8efaf51c" Win64="yes">
+<File DiskId="1" Id="_e72ce7fa_9e3f_4e1b_9535_f71cf83d6e63" KeyPath="yes" Name="velocity-engine-core-2.0.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\velocity-engine-core-2.0.jar"/>
+</Component>
+<Component Guid="480e14fa-4bf5-4696-a6fd-085af17d6f2d" Id="_480e14fa_4bf5_4696_a6fd_085af17d6f2d" Win64="yes">
+<File DiskId="1" Id="_48aa87b3_25bb_425e_8698_be38aff3c347" KeyPath="yes" Name="wagon-provider-api-2.10.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\wagon-provider-api-2.10.jar"/>
+</Component>
+<Component Guid="1bd50650-0841-4a67-8b84-21a3362dc92c" Id="_1bd50650_0841_4a67_8b84_21a3362dc92c" Win64="yes">
+<File DiskId="1" Id="_14fc0524_d2d8_4134_81f4_ed14270992c3" KeyPath="yes" Name="xmlpull-1.1.3.1.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\xmlpull-1.1.3.1.jar"/>
+</Component>
+<Component Guid="8bbd27c0-6bb8-486f-9fa5-caf29815f025" Id="_8bbd27c0_6bb8_486f_9fa5_caf29815f025" Win64="yes">
+<File DiskId="1" Id="_c2cf99ed_a319_4eae_bf04_d1d17ad47677" KeyPath="yes" Name="xpp3_min-1.1.4c.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\xpp3_min-1.1.4c.jar"/>
+</Component>
+<Component Guid="5398c00c-6269-40aa-a108-8d8b50ab6381" Id="_5398c00c_6269_40aa_a108_8d8b50ab6381" Win64="yes">
+<File DiskId="1" Id="_7d54abeb_c021_426b_9cab_b3cf50053c75" KeyPath="yes" Name="xstream-1.4.8.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\xstream-1.4.8.jar"/>
+</Component>
+<Component Guid="3dad5253-c5b9-4242-ad86-f0a2886464ed" Id="_3dad5253_c5b9_4242_ad86_f0a2886464ed" Win64="yes">
+<File DiskId="1" Id="_990ddce2_d68b_432b_920d_2cf67aef047c" KeyPath="yes" Name="xz-1.8.jar" Source="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\FlatLaF-ASCII-editor\libs\xz-1.8.jar"/>
+</Component>
+</Directory>
+</Directory>
+</Directory>
+<Directory Id="ProgramMenuFolder">
+<Directory Id="ApplicationProgramsFolder" Name="FlatLaF-ASCII-editor">
+<Component Guid="b86a25d2-c658-48db-be5e-d3efe69fd687" Id="ApplicationShortcut">
+<Shortcut Description="FlatLaF-ASCII-editor" Id="ApplicationStartMenuShortcut" Name="FlatLaF-ASCII-editor" Target="[#exeFile]" WorkingDirectory="INSTALLDIR"/>
+<RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+<RegistryValue Key="Software\ACME\FlatLaF-ASCII-editor" KeyPath="yes" Name="installed" Root="HKCU" Type="integer" Value="1"/>
+</Component>
+</Directory>
+</Directory>
+</Directory>
+<Feature Absent="disallow" AllowAdvertise="no" ConfigurableDirectory="INSTALLDIR" Description="FlatLaF-ASCII-editor" Id="_817029c6_2fae_4762_a46c_eee1a3aa91b0" Level="1" Title="FlatLaF-ASCII-editor">
+<ComponentRef Id="_b35ff0ea_cd3e_4f0b_99e6_9908fff99035"/>
+<ComponentRef Id="_672527bd_84a1_4942_bd1d_d5e3519bd0ba"/>
+<ComponentRef Id="_ece6bd2f_95ea_4663_be5b_0df46795b4ae"/>
+<ComponentRef Id="_9ca7ba04_37d1_4208_a9c4_de18dad12f26"/>
+<ComponentRef Id="_378be65f_36eb_406c_ae68_30b612ac3eef"/>
+<ComponentRef Id="_52e00aa8_289e_4b24_9c62_97c19ae39784"/>
+<ComponentRef Id="_9aa8ea0b_5e9a_4ff2_99aa_7f2fae5d1418"/>
+<ComponentRef Id="_240e6af1_959d_4048_bd34_f1f0a13db60f"/>
+<ComponentRef Id="_0b118641_8456_48d3_8e3f_8165ee86bd99"/>
+<ComponentRef Id="_ce43a664_fa5a_41b2_9680_ee6338d05df3"/>
+<ComponentRef Id="_2880a19a_ffcb_4eba_a366_4acea36cae19"/>
+<ComponentRef Id="_fe9bddeb_b0c8_4025_ba97_29d47ae33410"/>
+<ComponentRef Id="_18a65818_df10_4d4f_9c7b_db2868fb0fb4"/>
+<ComponentRef Id="_eb7bd789_419d_4822_8e96_1d1763df660d"/>
+<ComponentRef Id="_94b4d395_96e7_4a63_9f41_8394fc261e3f"/>
+<ComponentRef Id="_c21cbff6_4d72_49b8_b5ce_9e579f65e2dc"/>
+<ComponentRef Id="_f6c751ba_b05b_49b5_8d31_672299c4bf32"/>
+<ComponentRef Id="_b939452c_60e0_4796_8b75_7dd747669f8d"/>
+<ComponentRef Id="_e8715483_592d_4775_a1b4_8728c6401297"/>
+<ComponentRef Id="_0897183d_2e4a_4785_8cb4_0d5f7efc247b"/>
+<ComponentRef Id="_8558398a_7571_4a39_b7b5_c1eb58f1fe59"/>
+<ComponentRef Id="_80ee9faf_b7eb_48e1_9235_301c58ed6d5f"/>
+<ComponentRef Id="_a862bc09_7084_46e1_bef5_b09c24ae7b98"/>
+<ComponentRef Id="_c41ae083_c34a_4f48_a9e2_0ce93aa88699"/>
+<ComponentRef Id="_bcfc41e5_c186_495d_a28b_d7f695ce2373"/>
+<ComponentRef Id="_40973061_3f15_48a8_b5ce_1fe13ae6ed7c"/>
+<ComponentRef Id="_03f96b51_c41b_43f4_88ad_29181c86ef61"/>
+<ComponentRef Id="_fe8e1a23_f2b6_47fe_8af4_f40d39611456"/>
+<ComponentRef Id="_03720ae1_61f3_4716_911f_c51fd1ba1741"/>
+<ComponentRef Id="_fb2e19ac_5994_404b_bae7_9cae055e8a7b"/>
+<ComponentRef Id="_568b814e_c4c9_4adf_85ba_85d0cbe985a1"/>
+<ComponentRef Id="_0ebaef4c_f2a1_42da_98d3_16db3d85b2bc"/>
+<ComponentRef Id="_8cf8c873_4993_4039_b9f3_8de3a2e4242b"/>
+<ComponentRef Id="_35933e99_9d5e_4e09_a702_c9167f5772d2"/>
+<ComponentRef Id="_d5019210_c803_40f3_a922_e7144d7b107a"/>
+<ComponentRef Id="_4f7a6fb5_0ef7_4ef1_87dd_369665e62331"/>
+<ComponentRef Id="_092a4c95_a70a_42a8_883a_ae77264d3906"/>
+<ComponentRef Id="_9045e97f_0a9e_47ef_95d8_ed88b130efc2"/>
+<ComponentRef Id="_651d12e0_08cd_4cda_9460_1597364932cf"/>
+<ComponentRef Id="_268a53cd_13b2_447f_b92f_12a13059edf2"/>
+<ComponentRef Id="_f6e14b03_c894_4204_b6fa_7f0b4fb75271"/>
+<ComponentRef Id="_f730db48_9cb6_4124_a79a_b12c62951019"/>
+<ComponentRef Id="_88589562_f343_4948_ab2e_6ec14af74275"/>
+<ComponentRef Id="_ec393050_55d7_4b0f_b6f2_b716ce6669af"/>
+<ComponentRef Id="_f3f48fcb_ce1b_4fea_9c9c_94c2c402e1b1"/>
+<ComponentRef Id="_5c6383f8_c40f_4aca_9de8_918f9faab36f"/>
+<ComponentRef Id="_4a22980c_8a01_4b04_b9fc_d84cfbd7d1df"/>
+<ComponentRef Id="_fbce5dd7_a09c_4248_812b_c3fdaecb49a9"/>
+<ComponentRef Id="_d84bebbb_5cea_4dda_ab46_12f108d0c053"/>
+<ComponentRef Id="_5c343688_05ee_43aa_9091_e857d0cb19f1"/>
+<ComponentRef Id="_7c2853d2_dbe3_4bbf_9ed4_148718fe9d36"/>
+<ComponentRef Id="_127851c7_6394_4008_a5e4_93c4a5f4348c"/>
+<ComponentRef Id="_0ef643f8_7c42_44aa_aba8_eec186b49174"/>
+<ComponentRef Id="_b33e407c_62ef_4483_aaf5_ae1b3ccbbc0c"/>
+<ComponentRef Id="_83363f6c_bbf4_4012_8579_661bcffb827f"/>
+<ComponentRef Id="_514a4f0a_699b_4503_b992_aaa45d067d88"/>
+<ComponentRef Id="_b661b2a6_ef8e_45cd_a111_f22e94b9e35a"/>
+<ComponentRef Id="_e107255c_a9d5_4f59_ac82_8ad79033b4c9"/>
+<ComponentRef Id="_f6c6a5ec_93b8_4605_aab7_2f104988f170"/>
+<ComponentRef Id="_ce134404_f2bb_4172_b0bf_d1b416fd5ee5"/>
+<ComponentRef Id="_556c119d_ae21_4acf_94f1_43847ccaa0e7"/>
+<ComponentRef Id="_e726c12d_da72_42f2_b0af_f531dd7eb0ba"/>
+<ComponentRef Id="_494742f9_4123_47a0_95eb_3a0b1ffc7475"/>
+<ComponentRef Id="_80e37481_0b83_4883_b001_a72edecb1e19"/>
+<ComponentRef Id="_51f14158_a28f_45bf_a3e9_559499da9a22"/>
+<ComponentRef Id="_d7500abc_bfc9_4170_a60b_debe511c9da1"/>
+<ComponentRef Id="_82a43251_22cf_4a0a_bc5e_2085322e5d55"/>
+<ComponentRef Id="_40565d18_ab27_4aa0_8973_801916ba2def"/>
+<ComponentRef Id="_c797b8c4_3515_473a_b76c_ae33f62d44d5"/>
+<ComponentRef Id="_f03eb1dc_895a_4f17_af9b_d40eb3053cf4"/>
+<ComponentRef Id="_4c1ee356_5a49_49ff_a843_66324b0076a7"/>
+<ComponentRef Id="_5ae32ab4_bdc7_4181_8223_1aa00094f4c4"/>
+<ComponentRef Id="_80aac836_dc7c_4434_bdab_e51d7a9314c3"/>
+<ComponentRef Id="_af7925b9_4de0_4156_bba9_494a6312a5cd"/>
+<ComponentRef Id="_39e906d5_9bca_47da_8892_248d189721c5"/>
+<ComponentRef Id="_8f4e16e6_afcb_4756_9a91_d71740796988"/>
+<ComponentRef Id="_88f117b8_5e39_4b77_8f00_9d87c2b5548e"/>
+<ComponentRef Id="_93f79c8d_eb54_46a8_a765_9cc03b173288"/>
+<ComponentRef Id="_d91da8a5_a2f7_46cd_9713_17169f9cfa8d"/>
+<ComponentRef Id="_b04328b5_af7a_452e_a6a8_537fe8e1c937"/>
+<ComponentRef Id="_6eb1bfab_f3cd_4696_850f_34d35af3d97c"/>
+<ComponentRef Id="_1c7d1bcd_bbdb_4a33_a09a_1543551255f7"/>
+<ComponentRef Id="_ff61f96f_40ac_4aec_aa0e_7cdc7694a13c"/>
+<ComponentRef Id="_5d47c303_8f24_41e0_91bc_0207512b85e7"/>
+<ComponentRef Id="_a955087f_e966_44a9_80b5_888e2e6c9c33"/>
+<ComponentRef Id="_c0b74727_3371_4375_b960_a8c361c302ea"/>
+<ComponentRef Id="_ed960cf5_ef93_4d93_baa6_2ff8889ede52"/>
+<ComponentRef Id="_40dfeff6_b8ee_4e31_9097_a77f377c644a"/>
+<ComponentRef Id="_73261e63_c8f1_4aa1_9c42_18c0b0ccdb45"/>
+<ComponentRef Id="_9723cef3_7587_4a1d_9c91_29853e4f108c"/>
+<ComponentRef Id="_82ef2068_b461_4019_b2bf_dcea8b203cd9"/>
+<ComponentRef Id="_3d4037c7_c1df_47e9_81c3_65c0a03bdd9f"/>
+<ComponentRef Id="_ac4c782d_693e_4f24_b746_fea47a7477d2"/>
+<ComponentRef Id="_e8f9985e_50c9_471b_a815_3058c1d8dad0"/>
+<ComponentRef Id="_631474be_a6f4_49f3_9c1b_c6440b72adac"/>
+<ComponentRef Id="_c94183e1_f70f_4c62_aed7_a254d32dc95e"/>
+<ComponentRef Id="_c9882ed6_3b9a_4973_9fa9_db4395f6cf04"/>
+<ComponentRef Id="_45ec090f_8ad0_4f67_ae38_462fa0579b9d"/>
+<ComponentRef Id="_7427798f_a0a1_4083_8e82_d6afc0b07a4c"/>
+<ComponentRef Id="_9de0313f_eaab_4d55_a45c_09b76bc4f914"/>
+<ComponentRef Id="_a6197677_51e3_43d7_a2c2_28ae35f86f27"/>
+<ComponentRef Id="_66840459_4ed4_4789_95d9_72d7e0746789"/>
+<ComponentRef Id="_747569b7_d99e_43db_bfcb_3921dbeec3a7"/>
+<ComponentRef Id="_6d499013_5351_4027_b18a_1f6a79587235"/>
+<ComponentRef Id="_2835cf05_9395_491b_aa85_29775db1b79e"/>
+<ComponentRef Id="_192f7a75_375e_4ee7_b0ab_d1ce11e4b7c6"/>
+<ComponentRef Id="_1c0403ba_047f_498e_bba6_ac7f0cca10ed"/>
+<ComponentRef Id="_833782b5_6718_4b61_8d78_58ac7c8f96dc"/>
+<ComponentRef Id="_c08c7839_26bd_4817_bafa_1ac0e3d27a58"/>
+<ComponentRef Id="_04825e90_260e_4168_9d5a_c3b743c69555"/>
+<ComponentRef Id="_171fb0cf_c419_4045_8424_4af497e0885f"/>
+<ComponentRef Id="_26532c0b_e1eb_4ed3_a5d5_91d6e6f80326"/>
+<ComponentRef Id="_48c40c66_bc3e_477f_919f_8b2124fb13e6"/>
+<ComponentRef Id="_137f32a2_a645_4f39_a933_63f1283c537e"/>
+<ComponentRef Id="_6cba44d2_7be3_4af9_97ce_8e7192f5b07e"/>
+<ComponentRef Id="_e2560a56_d27c_4154_8334_1143a6c82eef"/>
+<ComponentRef Id="_7795acf7_4afc_4ba1_8692_8fc738b63b2d"/>
+<ComponentRef Id="_62c6b9b1_af9b_4a1c_baca_96db0d414c78"/>
+<ComponentRef Id="_4162635f_571e_4258_8c8e_191c3049fa60"/>
+<ComponentRef Id="_e5a3c7cd_9ea4_4f8a_bb73_2d195768f2c2"/>
+<ComponentRef Id="_e7368fe4_e7ba_4afd_93f3_87cfb760c0e3"/>
+<ComponentRef Id="_586d76f1_774a_44f9_bf12_86a8754aaf7f"/>
+<ComponentRef Id="_c9961634_7257_40a1_9aab_611a197ad2ce"/>
+<ComponentRef Id="_342a9acb_99d2_42f7_b5ac_bdaffb8d97b4"/>
+<ComponentRef Id="_25e664d5_0de6_459c_bace_db127b5511d1"/>
+<ComponentRef Id="_7e916862_9fb9_4396_ba32_6e8aadec9aef"/>
+<ComponentRef Id="_b45698c7_1406_4f70_9a2b_31f3ee3477ab"/>
+<ComponentRef Id="_7b616ef4_a217_47bc_9305_caba40b6958e"/>
+<ComponentRef Id="_9802a641_80a7_4ca5_884f_d8d5970d9c62"/>
+<ComponentRef Id="_8c9a0996_db9c_44d0_a5de_c41cff644f19"/>
+<ComponentRef Id="_6a4d566e_032e_442f_896c_038e98a6e0ae"/>
+<ComponentRef Id="_088dd35d_38cf_46e4_9c96_1551af2def22"/>
+<ComponentRef Id="_aa076b20_ea1a_4547_880e_a46e7fcf5600"/>
+<ComponentRef Id="_8a09c504_cdef_43f0_9e54_a817c4ee2b52"/>
+<ComponentRef Id="_491aeed8_0ae4_4920_a5b7_de6cf06f7444"/>
+<ComponentRef Id="_c45e3285_4529_4f40_9e26_cac3cbc5840e"/>
+<ComponentRef Id="_81a9dd33_4100_4471_8579_8913e7491e92"/>
+<ComponentRef Id="_20509ecf_77de_4468_b1e9_86856a2efa04"/>
+<ComponentRef Id="_612a65d6_3801_4140_922e_f974c16f6a21"/>
+<ComponentRef Id="_24a60fe1_8d9a_437e_a360_c8081da733da"/>
+<ComponentRef Id="_8d10bb3d_1d64_482f_a81c_a4b12d81d77f"/>
+<ComponentRef Id="_c76e0cfb_3b3c_4692_93f2_1d9f8c00aa3f"/>
+<ComponentRef Id="_52a49b6f_b7e7_4b70_8515_291f419bd53d"/>
+<ComponentRef Id="_ad2bf2dc_4156_4274_aea9_381285d1c2cf"/>
+<ComponentRef Id="_e3048648_26d0_4e33_ad0a_6ce83c101374"/>
+<ComponentRef Id="_0c727c46_86b5_4314_86fe_a6a2909db59a"/>
+<ComponentRef Id="_9fb3f96c_dc9a_48fe_8594_593aa18f6525"/>
+<ComponentRef Id="_4cd13b09_5f74_4daa_973e_2d53b433a881"/>
+<ComponentRef Id="_92b7c81a_f2d2_45af_8abc_15aac7d197bf"/>
+<ComponentRef Id="_d3ed4bf3_badd_45b6_b193_2349c857ea65"/>
+<ComponentRef Id="_896f577a_dd47_4ab2_8d29_e9056e8b7ca0"/>
+<ComponentRef Id="_2fcb60dc_cfe9_43ef_b4e0_31506261dc8c"/>
+<ComponentRef Id="_d314e3e6_682f_4077_a876_c6abaf2387bc"/>
+<ComponentRef Id="_7dcf36c4_37ec_47d5_9d94_c9bbb6cf4a4c"/>
+<ComponentRef Id="_2ae91eb5_a31d_475a_840c_00177b9f5814"/>
+<ComponentRef Id="_b0e9447d_e607_4207_9e05_e6a7e09283ca"/>
+<ComponentRef Id="_443d4363_e90b_400e_8a82_51f5cf8103c3"/>
+<ComponentRef Id="_d447fb54_b744_4238_b760_bdd7c75a46b5"/>
+<ComponentRef Id="_f22ee457_2a67_4206_9765_57b102b77a5d"/>
+<ComponentRef Id="_9e2f6391_b858_43fe_af04_6514eb50664c"/>
+<ComponentRef Id="_05beee7f_aa16_4cc7_bf89_53ab9ab82522"/>
+<ComponentRef Id="_25872c5e_10fb_4f28_913b_b272c4ac4b02"/>
+<ComponentRef Id="_a4319a05_f434_4b99_b7d6_ecf8ff9f8ff5"/>
+<ComponentRef Id="_4b92b67b_33bb_4da7_8f44_ebe6901062d7"/>
+<ComponentRef Id="_9adb963b_6324_4105_97f0_c9f3ada12348"/>
+<ComponentRef Id="_6b3fbd22_9ded_4a37_ad02_d853e8b3566e"/>
+<ComponentRef Id="_f18bee83_b3bf_4d81_9bce_cc66642c9d1d"/>
+<ComponentRef Id="_45ffc045_0c15_420b_8a2c_dca7de18ce07"/>
+<ComponentRef Id="_54e9f973_cce3_419d_84de_ae57c3316073"/>
+<ComponentRef Id="_16099f12_739f_4ead_a287_e852dcfec834"/>
+<ComponentRef Id="_e0653e09_9723_47d9_b365_ab0827d02f81"/>
+<ComponentRef Id="_b69c3be3_742c_439d_9129_51226159fe26"/>
+<ComponentRef Id="_25d220df_bef4_405a_aff7_0b779754c24c"/>
+<ComponentRef Id="_79e3ea18_8f03_4564_b5e7_28e09e46baf9"/>
+<ComponentRef Id="_bd2a07be_ea92_4966_ab0e_413726129d83"/>
+<ComponentRef Id="_9f3bdec6_f2ab_4e2c_8258_604909ab699c"/>
+<ComponentRef Id="_995a1f0d_1f93_415e_9f07_51f6fe53aabc"/>
+<ComponentRef Id="_46446e44_d025_41fe_aad8_006e03b53656"/>
+<ComponentRef Id="_0293c2a9_b540_4009_aa36_f9391d3648a9"/>
+<ComponentRef Id="_cfd4ab69_a2e8_4665_8d43_c32e014ce41a"/>
+<ComponentRef Id="_cf1d9d0f_e5cd_421f_a4dd_cec2f150aba0"/>
+<ComponentRef Id="_c901347d_97f3_49d0_baf7_c0243433cbce"/>
+<ComponentRef Id="_cf56cd62_081a_4411_823c_506b6d6b511a"/>
+<ComponentRef Id="_c40959ef_05d9_4c18_88fd_637ebf49a7dd"/>
+<ComponentRef Id="_9f206608_9911_4514_9656_a19e0f3bd4a4"/>
+<ComponentRef Id="_75559c0a_943f_4198_a83f_d94262406bc9"/>
+<ComponentRef Id="_7a3943a8_4186_4aa2_a820_d13c225edfc9"/>
+<ComponentRef Id="_9768b986_754e_4911_998e_f116dada482d"/>
+<ComponentRef Id="_7a3899d3_d996_4d0b_a57c_5766b6478da6"/>
+<ComponentRef Id="_69faf664_d1ed_4f71_ac64_1a6a2412e7bf"/>
+<ComponentRef Id="_1ce7f440_8c2d_49f6_9c43_83266af7b3b3"/>
+<ComponentRef Id="_cd3d401d_001b_4388_86c9_102b3cd57f25"/>
+<ComponentRef Id="_82d8c60d_9df7_47e1_bf91_bf0247b677de"/>
+<ComponentRef Id="_943b0c70_4813_4572_9258_5081fa1d2994"/>
+<ComponentRef Id="_4f37e645_4f41_4cce_a039_154224a19273"/>
+<ComponentRef Id="_11b59297_4bbd_4d48_84f5_52a1274473cd"/>
+<ComponentRef Id="_eea1b87a_8b29_424c_9da6_7cd8f46de64a"/>
+<ComponentRef Id="_66f9713b_5124_4dfb_b82e_ea11ad0b3cbc"/>
+<ComponentRef Id="_cef146d3_7cba_4f7c_94e6_33b05d50e9f6"/>
+<ComponentRef Id="_26faf224_db4b_4e6d_8507_05212e7c364c"/>
+<ComponentRef Id="_2d27d803_3338_4772_9f8b_6a244edd54d8"/>
+<ComponentRef Id="_cc5bd7ec_3052_468f_b467_c93a41b55517"/>
+<ComponentRef Id="_35509608_3734_4743_92f8_f914dff78add"/>
+<ComponentRef Id="_b81c5b5b_9a15_4b1e_a013_82bc4487801b"/>
+<ComponentRef Id="_518ade00_c120_4bc6_b183_cdba64d84d4e"/>
+<ComponentRef Id="_c2651738_ce68_49ea_9d78_aaf78b5a756e"/>
+<ComponentRef Id="_aa4cd009_4515_4ae1_ada3_08714a58f4ee"/>
+<ComponentRef Id="_a1962cf4_0324_4c69_b771_96df48b71901"/>
+<ComponentRef Id="_abb10aa2_ac05_414a_9dce_da327195eaed"/>
+<ComponentRef Id="_6f13d4af_af60_4b04_825a_e7f68027515b"/>
+<ComponentRef Id="_421c6550_00a2_48cb_b6b2_fac6029280ae"/>
+<ComponentRef Id="_e14a8797_2255_4c2c_8dbd_225b766f6cc1"/>
+<ComponentRef Id="_64a5ec33_5e5a_45bb_a1f3_d54a8efaf51c"/>
+<ComponentRef Id="_480e14fa_4bf5_4696_a6fd_085af17d6f2d"/>
+<ComponentRef Id="_1bd50650_0841_4a67_8b84_21a3362dc92c"/>
+<ComponentRef Id="_8bbd27c0_6bb8_486f_9fa5_caf29815f025"/>
+<ComponentRef Id="_5398c00c_6269_40aa_a108_8d8b50ab6381"/>
+<ComponentRef Id="_3dad5253_c5b9_4242_ad86_f0a2886464ed"/>
+<ComponentRef Id="ApplicationShortcut"/>
+</Feature>
+<Icon Id="ICONFILE" SourceFile="C:\Users\Fred\IdeaProjects\FlatLaF ASCII-editor\target\assets\FlatLaF-ASCII-editor.ico"/>
+<Property Id="ARPPRODUCTICON" Value="ICONFILE"/>
+<MajorUpgrade AllowDowngrades="no" AllowSameVersionUpgrades="yes" DowngradeErrorMessage="A later version of FlatLaF-ASCII-editor is already installed. Setup will now exit." IgnoreRemoveFailure="no"/>
+</Product>
+</Wix>
