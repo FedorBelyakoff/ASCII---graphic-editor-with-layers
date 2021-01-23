@@ -21,7 +21,24 @@ public class ComponentPositionTest extends JFrame {
     public ComponentPositionTest() throws HeadlessException {
         setWindowSettings();
 
-        createWorkspace();
+        Workspace workspace = createWorkspace();
+        drawTestStrokes(workspace);
+    }
+
+    private void drawTestStrokes(Workspace workspace) {
+        Insets insets = workspace.getInsets();
+        int charHeight = workspace.getCharHeight();
+        int rows = workspace.getRows();
+        Graphics g = getGraphics();
+
+        int y = area.getY() + insets.top;
+        for (int i = 0; i < rows; i++) {
+            g.setColor(Color.BLACK);
+            g.drawLine(0, y, 1000, y);
+            y += charHeight;
+        }
+
+
     }
 
     private Workspace createWorkspace() {
